@@ -14,9 +14,7 @@ include "../conexion.php";
 <body>
     <header>
     <img src="../imagenes/trabajo.PNG" id="logotrabajo">
-    
-</header>
-<section>
+    <section>
     <center><h1>Agregar nuevo trabajo</h1></center>
     <form action="altatrabajo.php" method = "post" enctype="multipart/form-data">
           <fieldset>
@@ -51,6 +49,9 @@ include "../conexion.php";
 
     </form>
 </section>
+</header>
+
+
     
 </body>
 </html>
