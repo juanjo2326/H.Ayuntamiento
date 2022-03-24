@@ -27,7 +27,7 @@
                     <li><a href="./trabajadores/inicio_trabajo.php">Buscas Trabajo</a></li>
                     <li><a href="#">Consultar RFC</a></li>
                     <li><a href="#">Mantente informado</a></li>
-                    <li><a href="#">citas</a></li>
+                    <li><a href="#">DOCUMENTO PEDRIAL</a></li>
                     <li><a href="#">calendario</a></li>
                     <li><a href="#">Personal</a></li>
                     <li><a href="#">estudiantes</a></li>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUSCAR TRABAJO</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" type="text/css"href="../css/estilos.css">
 </head>
 <body>
 <header>
@@ -15,6 +15,9 @@
             </div>
             <div class="logo2">
                 <img src="../imagenes/logo2.jpeg" id="logo2">
+            </div>
+            <div class="logotrabajo">
+                <img src="../imagenes/trabajo.PNG" id="logotrabajo">
             </div>
             <div class="search">
             <input type="search" placeholder="Buscar">
@@ -46,7 +49,10 @@
 
         </div>
         </div>
+        <h3>Cuentas con una empresa y ocupas trabajadores registra aqui</h3>
+    <a href="./registro_trabajo.php">Registrar Trabajo</a>
     </header>
+
       <section>
           <?php
                include '../conexion.php';

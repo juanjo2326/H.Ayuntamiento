@@ -60,6 +60,15 @@ header{
     
     
 }
+.logotrabajo img{
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    z-index: 2;
+    left: 10%;
+}
 /*barra menu*/
 
 .container_menu{
