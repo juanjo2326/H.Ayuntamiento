@@ -41,7 +41,7 @@
                             <li><a href="" href○="#">Quejas o sugerencias</a></li>
                         </ul> 
                 </li>
-                <li><a href="#">iniciar sesion o registrarse</a>
+                <li><a href="login.php">iniciar sesion o registrarse</a>
                 </ul>
             </nav>
         
