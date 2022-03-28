@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "../conexion.php";
-$re=$con->query("select * from usuario where Usuario='".$_POST['Usuario']."' AND 
+$re=$mysql->query("select * from usuario where Usuario='".$_POST['Usuario']."' AND 
  					Password='".$_POST['Password']."'")	or die(mysql_error());
 	while ($f=mysqli_fetch_array($re)) {
 		$id=$f['idusu'];
@@ -18,7 +18,7 @@ $re=$con->query("select * from usuario where Usuario='".$_POST['Usuario']."' AND
 			header("Location: ../admin.php");	
 		}
 		if($tipo==3){
-			header("Location: ../grafica4.php");	
+			header("Location: ../index.php");	
 		}
 	}
 else{

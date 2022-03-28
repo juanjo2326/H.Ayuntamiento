@@ -44,13 +44,13 @@
             <p>Nombre de Usuario</p>
             <div class="field-container">
                 <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
-                <input type="text" id="Usuario" name="Usuario" class="field"> <br/>
+                <input type="text" id="usuario" name="Usuario" class="field"> <br/>
             </div>
             
             <p>Contraseña</p>
             <div class="field-container">
                 <i class="fa fa-key fa-lg" aria-hidden="true"></i>
-                <input type="password" id="Password" name="Password" class="field"> <br/><br/>
+                <input type="password" id="password" name="Password" class="field"> <br/><br/>
             </div>
 
             <p class="center-content">
@@ -58,7 +58,7 @@
             </p>
         </form>
 
-        <form action="" id="form_register" method="post" action="registrarUsua.php">
+        <form id="form_register" method="post" action="registrarUsua.php">
 
                 <div class="field-container">
                     <p>Nombre</p>
