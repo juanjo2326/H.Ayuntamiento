@@ -152,4 +152,57 @@ nav ul li ul li a:hover{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0.5) ;
 }
 
+/* Estilo de Info */
+#info{
+    margin-top: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 650px;
+    height: 625px;
+    background-color: white;
+    float: left;
+    padding-right: 100px;
+}
+#info p{
+    width: 610px;
+    font-family: serif;
+    font-size: 1em;
+    margin-top: 25px;
+    margin-left: 25px;
+    text-align: justify;
+    padding-right: 10px;
+}
 
+#letras{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 100px;
+}
+
+/* Estilo del mapa */
+#format-map{
+    margin-top: 300px;
+    margin-right: 10px;
+    width: 650px;
+    height: 625px;
+    background-color: white;
+    float: right;
+    padding-right: 100px;
+    border: solid 2px rgb(227, 103, 243);
+}
+
+#format-map p{
+    width: 610px;
+    font-family: serif;
+    font-size: 1em;
+    margin-top: 25px;
+    margin-left: 25px;
+    text-align: justify;
+    padding-right: 10px;
+}
+
+#mapa{
+    margin-left: 25px;
+    margin-top: 25px;
+}
