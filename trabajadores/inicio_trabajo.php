@@ -50,9 +50,9 @@
         </div>
         </div>
         <h3>Cuentas con una empresa y ocupas trabajadores registra aqui</h3>
-    <a href="./registro_trabajo.php">Registrar Trabajo</a>
+    <a href="./agregar_trabajo.php">Registrar Trabajo</a>
     </header>
-
+s
       <section>
           <?php
                include '../conexion.php';
