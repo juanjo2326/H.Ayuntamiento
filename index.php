@@ -29,7 +29,7 @@ include "./conexion.php";
                 <ul>
                     <li><a href="#!">inicio</a></li>
                     <li><a href="./trabajadores/inicio_trabajo.php">Buscas Trabajo</a></li>
-                    <li><a href="#">Consultar RFC</a></li>
+                    <li><a href="rfc.php">Consultar RFC</a></li>
                     <li><a href="#">Mantente informado</a></li>
                     <li><a href="#">DOCUMENTO PEDRIAL</a></li>
                     <li><a href="#">calendario</a></li>
@@ -78,7 +78,9 @@ include "./conexion.php";
             población de 3,916 habitantes.<br><br>
             Se constituyó en municipio por la Ley Territorial del 10 de diciembre de 1831.<br><br>
             En 1859, se nombro a su cabecera "Villa Echeverría", en honor al coronel Arcadio Echeverría, y en 1861, 
-            se le dio el nombre de Penjamillo de Degollado, en memoria del Célebre liberal Don Santos Degollado.
+            se le dio el nombre de Penjamillo de Degollado, en memoria del Célebre liberal Don Santos Degollado.<br><br>
+            <img src="./imagenes/presidente.png" id="letras"> <br><br>
+            
         </p>
     </div>
 

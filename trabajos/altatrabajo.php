@@ -1,9 +1,9 @@
 <?php
-include "./conexion.php";
+include ("../conexion.php");
 
 if(!isset($_POST['nombre']) && !isset($_POST['horario_entrada']) && !isset($_POST['horario_salida']) && !isset($_POST['requisitos']) 
-&& !isset($_POST['fecha_publicacion']) && !isset($_POST['vacantes'])){
-    header("Location: agregartrabajado.php");
+&& !isset($_POST['fecha_publi']) && !isset($_POST['vacantes'])){
+    header("Location: ../trabajadores/agregar_trabajado.php");
 }else{
     $allowedExts = array("gif","jpeg","jpg","png");
     $temp = explode(".", $_FILES["file"]["name"]);
@@ -11,7 +11,6 @@ if(!isset($_POST['nombre']) && !isset($_POST['horario_entrada']) && !isset($_POS
     $imagen="";
     $random=rand(1,999999);
     if((($_FILES["file"]["type"] == "imagen/gif")
-       || ($_FILES["file"]["type"] == "imagen/jpeg")
        || ($_FILES["file"]["type"] == "imagen/jpeg")
        || ($_FILES["file"]["type"] == "imagen/jpg")
        || ($_FILES["file"]["type"] == "imagen/pjpeg")
@@ -28,14 +27,14 @@ if(!isset($_POST['nombre']) && !isset($_POST['horario_entrada']) && !isset($_POS
             echo $_FILES["file"]["name"] . "ya existe. ";
         }else{
             move_uploaded_file($_FILES["file"]["tmp_name"],
-            "../img_presas/" .$random.'_'.$_Files["file"]["name"]);
+            "../img_presas/" .$random.'_'.$_FILES["file"]["name"]);
             echo "Archivo guardado en " . "../img_presas/" .$random.'_'.$_FILES["file"]["name"];
             $empresa=$_POST['nombre'];
-            $horario_entrada['horario_entrada'];
-            $horario_salida['horario_salida'];
-            $requisitos['requisitos'];
-            $fecha_publi['fecha_publi'];
-            $vacantes['vacantes'];
+            $horario_entrada=$_POST['horario_entrada'];
+            $horario_salida=$_POST['horario_salida'];
+            $requisitos=$_POST['requisitos'];
+            $fecha_publi=$_POST['fecha_publi'];
+            $vacantes=$_POST['vacantes'];
             $Sql="insert into empresas (nombre,horario_entrada,horario_salida,requisitos,fecha_publi,vacante,estado,imagen) values(
                 '".$empresa."',
                 '".$horario_entrada."',
@@ -46,7 +45,7 @@ if(!isset($_POST['nombre']) && !isset($_POST['horario_entrada']) && !isset($_POS
                 '".$imagen."',
                 '1')";
             $mysql->query($Sql);
-            header("Location: agregar_trabajo.php");
+            header("Location: ../trabajadores/agregar_trabajo.php");
         }
     }
 }else{

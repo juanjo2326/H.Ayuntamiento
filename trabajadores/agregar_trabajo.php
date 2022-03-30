@@ -18,7 +18,7 @@ include "../conexion.php";
     
     <section class="form-register">
     <center><h1>Formulario de registro</h1></center>
-    <form action="altatrabajo.php" method = "post" enctype="multipart/form-data">
+    <form action="../trabajos/altatrabajo.php" method = "post" enctype="multipart/form-data">
           <!--<fieldset>-->
               Nombre <br>
               <input class="controls" type="text" placeholder="Nombre de la empresa" name="nombre" required> 

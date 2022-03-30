@@ -233,3 +233,11 @@ nav > ul > li:first-child:hover >a{
 
   /*parte de agregar_trabajo.php*/
 
+.contenedor-img img{
+    width: 200px;
+    
+    display: inline-block;
+    vertical-align: top;
+
+
+}
