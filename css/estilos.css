@@ -239,5 +239,14 @@ nav > ul > li:first-child:hover >a{
     display: inline-block;
     vertical-align: top;
 
-
+} 
+center empresas a:btn{    
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }

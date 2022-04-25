@@ -60,3 +60,11 @@
     font-size: 16px;
 }
 
+.header_superior{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 20px;
+}

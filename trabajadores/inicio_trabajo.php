@@ -30,7 +30,7 @@
                 <ul>
                     <li><a href="../index.php">inicio</a></li>
                     <li><a href="../rfc.php">Consultar RFC</a></li>
-                    <li><a href="#">Mantente informado</a></li>
+                    <li><a href="#">Obras realizadas</a></li>
                     <li><a href="#">citas</a></li>
                     <li><a href="#">calendario</a></li>
                     <li><a href="#">Personal</a></li>
@@ -60,37 +60,29 @@
             </nav>            
 
         </div>
-        </div>
+        </div> 
         
-       <!--<div>
-           
-        <h3>Cuentas con una empresa y ocupas trabajadores registra aqui</h3>
-    <a href="./agregar_trabajo.php"><h2>Registrar Trabajo</h2></a>
-    
-    <p>En el H Ayuntamiento, queremos mejorar el pueblo para las personas que no <br>
-       encuentran trabajo. En nuestro apartado de buscartrabajo tendras las opciones<br>
-       de ver las empresas o negocios que estan en el municipio de Penjamillo de Degollado.<br>
-       con la ayuda que se tendra se vera la informacion para que ellos te puedan buscar</br>
-       asi quedan en contacto con el administrador del contacto   </p>
-       </div> -->
+
     
        
-    </header><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </header><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <center>
     <div>
           
         <h3>Cuentas con una empresa y ocupas trabajadores registra aqui</h3>
-    <a href="./agregar_trabajo.php"><h2>Registrar Trabajo</h2></a>
+    <a href="./agregar_trabajo.php" class="btn"><h2>Registrar Trabajo</h2></a><br>
     
     <p>En el H Ayuntamiento, queremos mejorar el pueblo para las personas que no <br>
-       encuentran trabajo. En nuestro apartado de buscartrabajo tendras las opciones<br>
+       encuentran trabajo. En nuestro apartado de buscar trabajo tendras las opciones<br>
        de ver las empresas o negocios que estan en el municipio de Penjamillo de Degollado.<br>
        con la ayuda que se tendra se vera la informacion para que ellos te puedan buscar</br>
        asi quedan en contacto con el administrador del contacto   </p>
-       </div> </center> <br>
+       </div> </center> <br><br>
     <section>
        <?php
+               require 'config.php'; 
                include '../conexion.php';
+               
                $re=$mysql->query("select * from empresas where estado = 1 ORDER BY vacante DESC") or die(mysql_error());
                while ($f=$re->fetch_array()){
                    ?>
@@ -101,8 +93,11 @@
                                <?php echo ($f['vacante']>0) ? '' : '<p class="text-img">Agotado</p>';?>
                            </div>
                            <span><?php echo $f['nombre'];?></span><br>
+                           <span>Fecha de publicacion: <?php echo $f['fecha_publi'];?></span><br>
                            <?php echo ($f['vacante']>0) ? 'vacante: '.$f['vacante'] : 'sin vacantes'; ?><br>
-                           <a href="./detalles_trabajo.php?id=<?php $f['id_empresa']; ?>"> ver detalles</a>
+                           <a href="./detalles_trabajo.php?id=<?php echo $f['id']; ?>&token=<?php echo
+                           hash_hmac('sha1', $f['id'], KEY_TOKEN); ?>" class="btn 
+                           btn-primary"> ver detalles</a>
 
                </center>
                </div>
