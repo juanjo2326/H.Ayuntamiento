@@ -1,8 +1,9 @@
 <?php
 include "./conexion.php";
 
-if(!isset($_POST['nombre']) && !isset($_POST['apeliidoPa']) && !isset($_POST['apellidoMa']) && !isset($_POST['fecha_nacimiento']) 
-  && !isset($_POST['telefono']) && !isset($_POST['rfc']) && !isset($_POST['direccion'])){
+if(!isset($_POST['nombre']) && !isset($_POST['horario_entrada']) && !isset($_POST['horario_salida']) && !isset($_POST['requisitos']) 
+  && !isset($_POST['fecha_publi']) && !isset($_POST['telefono']) && !isset($_POST['vacante'])) && !isset($_POST['direccion']))
+  {
       header("Location: agregartrabajador.php");
   } else{
       $allowedExts = array("gif","jpeg","jpg","png");
@@ -31,18 +32,20 @@ if(!isset($_POST['nombre']) && !isset($_POST['apeliidoPa']) && !isset($_POST['ap
                       "../fotostrabajadores/" .$random.'_'.$_FILES["file"]["name"]);
                       echo "Archivo guardado "."../fotostrabajadores/" .$random.'_'.$_FILES["file"]["name"];
                       $nombre=$_POST['nombre'];
-                      $apellidoPa=$_POST['apellidoPa'];
-                      $apellidoMa=$_POST['apellidoMa'];
-                      $fecha_nacimiento=$_POST['fecha_nacimiento'];
+                      $horario_entrada=$_POST['horario_entrada'];
+                      $horario_salida=$_POST['horario_salida'];
+                      $fecha_publi=$_POST['fecha_publi'];
                       $telefono=$_POST['telefono'];
-                      $rfc=$_POST['direccion'];
-                     $Sql="insert into trabajadores (nombre, apellidoPa, apellidoMa, fecha_nacimiento, telefono, rfc, direccion, imagen, tipo) values(
+                      $vacante=$_POST['vacante'];
+                      $direccion=$_POST['direccion'];
+                     $Sql="insert into empresas (nombre, horario_entrada, horario_salida, fecha_publi, telefono, vacante, direccion, imagen, tipo) values(
                          '".$nombre."',
-                         '".$apellidoPa."',
-                         '".$apellidoMa."',
-                         '".$fecha_nacimiento."',
+                         '".$horario_entrada."',
+                         '".$horario_salida."',
+                         '".$fecha_public."',
                          '".$telefono."',
-                         '".$rfc."',
+                         '".$vacante."',
+                         '".$direccion."',
                          '".$imagen."',
                          '1')";
 

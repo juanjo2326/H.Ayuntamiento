@@ -30,10 +30,9 @@ include "./conexion.php";
                     <li><a href="#!">inicio</a></li>
                     <li><a href="./trabajadores/inicio_trabajo.php">Buscas Trabajo</a></li>
                     <li><a href="rfc.php">Consultar RFC</a></li>
-                    <li><a href="#">Mantente informado</a></li>
-                    <li><a href="#">DOCUMENTO PEDRIAL</a></li>
-                    <li><a href="#">calendario</a></li>
-                    <li><a href="#">Personal</a></li>
+                    <li><a href="#">Obras realizadas</a></li>
+                    <li><a href="./pedrial/inicio_pedrial.php">DOCUMENTO PEDRIAL</a></li>
+                    <li><a href="./personal/personal.php">Personal</a></li>
                     <li><a href="#">estudiantes</a></li>
                     <li><a href="#">Ayuda</a>
                         <ul class="submenu">
@@ -95,11 +94,6 @@ include "./conexion.php";
         </div>
         <p>Penjamillo es uno de los 113 municipios en los que se divide el estado mexicano de Michoacán de Ocampo, localizado en el norte del estado, su cabecera municipal es Penjamillo de Degollado.</p>
     </div>
-
-
-    
-            
-        
     
 
 </body>

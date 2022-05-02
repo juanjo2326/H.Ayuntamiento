@@ -27,7 +27,7 @@
                     <li><a href="index.php">inicio</a></li>
                     <li><a href="./trabajadores/inicio_trabajo.php">Buscas Trabajo</a></li>
                     <li><a href="#">Obras realizadas</a></li>
-                    <li><a href="#">DOCUMENTO PEDRIAL</a></li>
+                    <li><a href="./pedrial/inicio_pedrial.php">DOCUMENTO PEDRIAL</a></li>
                     <li><a href="#">calendario</a></li>
                     <li><a href="#">Personal</a></li>
                     <li><a href="#">estudiantes</a></li>

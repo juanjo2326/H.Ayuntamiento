@@ -31,7 +31,7 @@
                     <li><a href="../index.php">inicio</a></li>
                     <li><a href="../rfc.php">Consultar RFC</a></li>
                     <li><a href="#">Obras realizadas</a></li>
-                    <li><a href="#">citas</a></li>
+                    <li><a href="../pedrial/inicio_pedrial.php">Documento pedrial</a></li>
                     <li><a href="#">calendario</a></li>
                     <li><a href="#">Personal</a></li>
                     <li><a href="#">estudiantes</a></li>

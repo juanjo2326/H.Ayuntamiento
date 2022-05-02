@@ -13,6 +13,7 @@ include "../conexion.php";
     <script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
 </head>
 <body>
+<a  class="botons" href="inicio_trabajo.php"> <input type="button" value="Regresar "></a>
     <header>
     <center><img src="../imagenes/trabajo.PNG" width="200" id="logotrabajo"></center>
     
