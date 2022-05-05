@@ -6,6 +6,7 @@
     <title>Detalles de los trabajos</title>
     <link ewl="stylesheet" type="text/css" href="../css/detallestrabajo.css">
     <!-- <script type="text/javascript" href="."></script> -->
+    <!--no detecta el css-->
 </head>
 <body>
     <header class="header_superior">

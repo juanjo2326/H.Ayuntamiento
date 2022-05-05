@@ -16,7 +16,7 @@ include "../conexion.php";
 <a  class="botons" href="inicio_trabajo.php"> <input type="button" value="Regresar "></a>
     <header>
     <center><img src="../imagenes/trabajo.PNG" width="200" id="logotrabajo"></center>
-    
+    <!--mmmmmmmm-->
     <section class="form-register">
     <center><h1>Formulario de registro</h1></center>
     <form action="../trabajos/altatrabajo.php" method = "post" enctype="multipart/form-data">
