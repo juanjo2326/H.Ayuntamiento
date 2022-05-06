@@ -30,11 +30,11 @@
             <nav>
                 <ul>
                     <li><a href="../index.php"style="text-decoration:none">inicio</a></li>
+                    <li><a href="../trabajadores/inicio_trabajo.php"style="text-decoration:none">Buscas Trabajo</a></li>
                     <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="#"style="text-decoration:none">Obras realizadas</a></li>
                     <li><a href="../pedrial/inicio_pedrial.php"style="text-decoration:none">Documento pedrial</a></li>
-                    <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
-                    <li><a href="../estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
+                    <li><a href="#"style="text-decoration:none">Personal</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
                         <ul class="submenu">
                             <li><a href="" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
@@ -47,7 +47,7 @@
                         </li>
                         <?php
 		                if(isset($_SESSION['Usuario'])){ ?>
-		            <li><a href="./login/cerrar.php"style="text-decoration:none">>cerrar Sesion</a></li>
+		            <li><a href="./login/cerrar.php"style="text-decoration:none">cerrar Sesion</a></li>
 		                <?php
 		                } else { 
 		                ?>
@@ -69,8 +69,25 @@
     <center>
     <div>
           
-        <h3>Cuentas con una empresa y ocupas trabajadores registra aqui</h3><br><br>
-    <a href="./agregar_trabajo.php" class="btn"style="text-decoration:none"><input type="button" value="AGREGAR EMPLEO"></a><br><br>
+        <h3>Cuentas con una empresa y ocupas trabajadores registra aqui</h3>
+        <div>
+        <ul class="diapositivas">
+    <li id="diapositivas1">En campusMVP</ li>
+    <li id="diapositivas2">encontrarás los mejores</ li>
+    <li id="diapositivas">cursos online de programación</ li>
+    <li id="diapositivas4">y aprenderás de la mano</ li>
+    <li id="diapositivas5">de los mejores profesionales</ li>
+ </ul>
+ <nav>
+    <ul class="menu">
+        <li><a href="#diapositivas1">Diapositiva 1<//a></ li>
+        <li><a href="#diapositivas2">Diapositiva 2<//a></ li>
+        <li><a href="#diapositivas3">Diapositiva 3<//a></ li>
+        <li><a href="#diapositivas4">Diapositiva 4<//a></ li>
+        <li><a href="#diapositivas5">Diapositiva 5<//a></ li>
+</ul>
+</nav>
+        </div>
     
     <p>En el H Ayuntamiento, queremos mejorar el pueblo para las personas que no <br>
        encuentran trabajo. En nuestro apartado de buscar trabajo tendras las opciones<br>

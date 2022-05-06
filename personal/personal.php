@@ -26,9 +26,10 @@
                 <ul>
                     <li><a href="../index.php">inicio</a></li>
                     <li><a href="../trabajadores/inicio_trabajo.php">Buscas Trabajo</a></li>
+                    <li><a href="rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="#">Obras realizadas</a></li>
                     <li><a href="../pedrial/inicio_pedrial.php">documento pedrial</a></li>
-                    <li><a href="#">estudiantes</a></li>
+                    <li><a href="../estudiantes/inicio_estudiantes.php">estudiantes</a></li>
                     <li><a href="#">Ayuda</a>
                         <ul class="submenu">
                             <li><a href="" href○="#">Ayuda comunitaria</a></li>
