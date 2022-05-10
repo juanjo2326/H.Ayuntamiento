@@ -10,12 +10,10 @@ if(!isset($_POST['nombre']) && !isset($_POST['horario_entrada']) && !isset($_POS
     $extension = end($temp);
     $imagen="";
     $random=rand(1,999999);
-    if((($_FILES["file"]["type"] == "imagen/gif")
-       || ($_FILES["file"]["type"] == "imagen/jpeg")
-       || ($_FILES["file"]["type"] == "imagen/jpg")
-       || ($_FILES["file"]["type"] == "imagen/pjpeg")
-       || ($_FILES["file"]["type"] == "imagen/x-png")
-       || ($_FILES["file"]["type"] == "imagen/png"))){
+    if((($_FILES["file"]["type"] == "image/gif")
+       || ($_FILES["file"]["type"] == "image/jpeg")
+       || ($_FILES["file"]["type"] == "image/jpg")
+       || ($_FILES["file"]["type"] == "image/png"))){
            //verificamos que sea una imagen
     if ($_FILES["file"]["error"] > 0){
         //verificamos que venga algo en el input file
@@ -45,7 +43,11 @@ if(!isset($_POST['nombre']) && !isset($_POST['horario_entrada']) && !isset($_POS
                 '".$imagen."',
                 '1')";
             $mysql->query($Sql);
+            if ($mysql->query($Sql)or die($mysql-> error)) {
+                echo "registrado";
+            }else{
             header("Location: ../trabajadores/agregar_trabajo.php");
+        }
         }
     }
 }else{
