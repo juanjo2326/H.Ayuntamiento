@@ -45,7 +45,6 @@ if(!isset($_POST['nombre']) && !isset($_POST['horario_entrada']) && !isset($_POS
             $mysql->query($Sql);
             if ($mysql->query($Sql)or die($mysql-> error)) {
                 echo "registrado";
-            }else{
             header("Location: ../trabajadores/agregar_trabajo.php");
         }
         }
