@@ -13,12 +13,11 @@ include "../conexion.php";
     <script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
 </head>
 <body>
-    <header>
     <center><img src="../imagenes/documento.PNG" width="200" id="logotrabajo"></center>
-    
+
     <section class="form-register">
     <center><h1>Formulario de registro pedrial</h1></center>
-    <form action="../trabajos/alta_pedrial.php" method = "post" enctype="multipart/form-data">
+    <form action="./alta_pedrial.php" method = "post" enctype="multipart/form-data">
           <!--<fieldset>-->
               Tipo de comprovante <br>
               <input class="controls" type="text" placeholder="Tipo del comprovante" name="tipo_comprovante" required> 
@@ -57,7 +56,7 @@ include "../conexion.php";
           <!-- </fieldset>-->
           <!--<fieldset>-->
                 Clave <br>
-              <input class="controls" type="text" placeholder="Clave castral" name="clave_catastral" required> 
+              <input class="controls" type="text" placeholder="Clave castral" name="clave_castral" required> 
           <!-- </fieldset>-->
           <!--<fieldset>-->
                 Concepto <br>
@@ -88,7 +87,6 @@ include "../conexion.php";
 
     </form>
 </section>
-</header>
 
 
     
