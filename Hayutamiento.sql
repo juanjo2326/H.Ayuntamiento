@@ -1,4 +1,4 @@
- create database ayuntamiento;
+create database ayuntamiento;
 use ayuntamiento;
 
 
@@ -19,7 +19,6 @@ correo varchar (30) not null,
 tipo smallint (2) not null,
 primary key (idusu));
 
-select * from usuario;
 
 
 -- --------------------------------------------------------------
@@ -31,12 +30,10 @@ nombre varchar (40)default null,
 habitantes int (11)not null,
 primary key (idranch));
 
-select * from rancho;
 
 -- -------------------------------------------------------------
 -- tabla de datos para trabajadores ----------------------------
 -- -------------------------------------------------------------
-drop table datos;
 create table datos(
 iddatos int (11) not null auto_increment,
 nombre varchar (40) not null,
@@ -49,12 +46,11 @@ direccion varchar (100) not null,
 imagen varchar (40) not null,
 primary key (iddatos));
 
-select * from datos;
-
 -- -------------------------------------------------------
 -- tabla de datos de empresas ----------------------------
 -- -------------------------------------------------------
-drop table empresas;
+
+
 create table empresas(
 id_empresa int (11) not null auto_increment,
 nombre varchar (40) not null,
@@ -64,7 +60,6 @@ requisitos varchar (100) not null,
 fecha_publi  date not null,
 primary key(id_empresa)
 );
-select * from empresas;
 
 -- ----------------------------------------------------
 -- tabla pago pedrial----------------------------------
@@ -88,7 +83,6 @@ ubicacion_predio varchar (100) not null,
 periodo_pago varchar (40) not null,
 clave smallint (6) not null,
 primary key(id_pedrial));
-select * from pago_pedrial;
 
 -- ----------------------------------------------------
 -- tabla personal--------------------------------------
@@ -102,6 +96,19 @@ apeliidoM varchar (20) not null,
 telefono_area varchar (10),
 area varchar (60) not null,
 primary key(id_personal));
+
+
+
+
+select * from pago_pedrial;
+select * from empresas;
+drop table empresas;
+select * from datos;
+select * from rancho;
+select * from usuario;
+drop table datos;
+
+
 
 -- consultas basicas para el personal
 select * from personal; 

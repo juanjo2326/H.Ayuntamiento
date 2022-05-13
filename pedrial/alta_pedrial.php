@@ -36,7 +36,7 @@ $ubicacion_predio=$_POST['ubicacion_predio'];
 $periodo_pago=$_POST['periodo_pago'];
 $clave=$_POST['clave'];
 $telefono=$_POST['telefono'];
-
+   
 echo "$tipo_comprovante,$folio,$fecha,$pago,$forma_pago,$contribuyente,$cuenta_pedrial,$valor_catastral,$concepto,$domicilio,$ubicacion_predio,$periodo_pago,$clave,$telefono";
 
 include "../conexion.php";
