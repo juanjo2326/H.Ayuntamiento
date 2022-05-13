@@ -11,6 +11,7 @@ include "../conexion.php";
     <title>Registrar Trabajo</title>
     <link rel="stylesheet" type="text/css"href="../css/trabajo.css">
     <script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
+    <!-- CSS only -->
 </head>
 <body>
     <!--el css del header_superior no los corre -->
@@ -89,11 +90,11 @@ include "../conexion.php";
           <!-- </fieldset>-->
           <!--<fieldset>-->
               Horario de entrada <br>
-              <input class="controls" type="text" placeholder="Horario de entrada" name="horario_entrada" required> 
+              <input class="controls" type="time" placeholder="Horario de entrada" name="horario_entrada" required> 
           <!-- </fieldset>-->
          <!--<fieldset>-->
               Horario de salida <br>
-              <input class="controls" type="text" placeholder="Horario de salida" name="horario_salida" required> 
+              <input class="controls" type="time" placeholder="Horario de salida" name="horario_salida" required> 
           <!-- </fieldset>-->
          <!--<fieldset>-->
               Requisitos <br>

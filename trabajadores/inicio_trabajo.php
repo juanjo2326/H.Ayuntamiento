@@ -8,6 +8,20 @@
     <link rel="stylesheet" type="text/css" href="../css/estilos.css">
     <!--no decetca los estilos en los trabajos-->
 </head>
+<style type="text/css">
+    .empresas{            
+           width: 400px;
+    margin: 10px 5px;
+    display: inline-flex;
+    height: 250px;
+    justify-content: center;
+    background: silver;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+</style>
 <body>
 <header>
         <div class="header_superior">
@@ -93,7 +107,7 @@
                    <div class="empresas">
                        <center>
                            <div class="contenedor-img">
-                               <img class="empresas-imagen" src="../img_presas/<?php echo $f['imagen'];?>"><br>
+                               <img  style="border-radius: 40px;" class="empresas-imagen" src="../img_presas/<?php echo $f['imagen'];?>"><br>
                                <?php echo ($f['vacante']>0) ? '' : '<p class="text-img">Agotado</p>';?>
                            </div>
                            <span><?php echo $f['nombre'];?></span><br>

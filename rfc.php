@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <title>H Ayuntamiento 2021-2024</title>
     <link rel="stylesheet" type="text/css"href="css/estilosinicio.css">
+   
+    <style type="text/css">
+            h2, h3, h1{text-align: -webkit-left;
+    width: 500px;
+    text-transform: uppercase;
+}
+
+.header_superior{background: white;}
+
+    </style>
+    <style type="text/css">]
+
+
+
+
+
+</style>
 </head>
 <body>
     <header>
@@ -112,7 +129,11 @@
                <li>5.-CODIGO POSTAL</li>
                <li>6.-ERES EMPLEADO</li>
                <li>7.-deberas ingresar el texto de la imagen</li><br>
-               <a  class="botons" href="https://www54.sat.gob.mx/curp/Consult"> <input type="button" value="CONSULTAR RFC "></a><br>
+               <a  class="botons" href="https://www54.sat.gob.mx/curp/Consult"> <input type="button" value="CONSULTAR RFC " style="width: 200px;
+    background: springgreen;
+    -webkit-text-stroke: medium;
+    height: 40px;
+    border-radius: 90px;"></a><br>
                <br>
                <br>
                <br>

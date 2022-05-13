@@ -1,5 +1,40 @@
 -- relleno de la tabla ranchos----------------------------------------
--- -------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('1', 'Ansihuacuaro', '1095');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('2', 'Arroyuelos', '258');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('3', 'Buenavista', '19');
@@ -60,15 +95,16 @@ INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES (
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('58', 'Zerecuato', '193');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('59', 'Ziquítaro', '1906');
 
+INSERT INTO `ayuntamiento`.`trabajadores` (`id_trabajador`, `nombre`, `apellidoPa`, `apellidoMa`, `fecha_nacimiento`, `telefono`, `rfc`, `direccion`, `imagen`, `tipo`) 
+             VALUES ('1', 'Juan Jose', 'Gallardo', 'Suarez', '1998-02-26', '3521429722', 'GASJ980226CF6', 'calledeportiva #86 tirimacuaro', '1', '1');
 
 
+INSERT INTO `ayuntamiento`.`empresas` (`id`, `nombre`, `horario_entrada`, `horario_salida`, `requisitos`, `fecha_publi`, `telefono`, `vacante`, `direccion`,`imagen`, `estado`) 
+VALUES ('1', 'arctitec', '8 am', '4 pm', 'arquitecto', '2022-03-30', '1352816029', '1','penjamillo', 'inge.jpg', '1');
+INSERT INTO `ayuntamiento`.`empresas` (`id`, `nombre`, `horario_entrada`, `horario_salida`, `requisitos`, `fecha_publi`, `telefono`, `vacante`,`direccion`, `imagen`, `estado`) 
+VALUES ('2', 'ventec', '8 am', '4 pm', 'ventas', '2022-03-30', '1352816039','1','penjamillo', 'ventas.jpg', '1');
 
 
-
-
-
--- relleno de la tabla personal----------------------------------------
--- -------------------------------------------------------------
 INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `apeliidoM`, `telefono_area`, `area`) VALUES ('1', 'Xochit Kareli', 'Del Rio', 'Carranza', '359524-2046', 'Presidencia');
 INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `apeliidoM`, `area`) VALUES ('2', 'yesenia ', 'Ramírez', 'Duarte', 'Presidencia');
 INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `apeliidoM`, `area`) VALUES ('3', 'Fernando', 'Montes De Oca', 'Ruiz', 'presidencia');
@@ -162,4 +198,4 @@ INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `ap
 INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `apeliidoM`, `area`) VALUES ('91', 'Ayde Vanessa', 'Ibarra', 'Quezada', 'Sistema de Desarrolo Integral Familiar(DIF)');
 INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `apeliidoM`, `area`) VALUES ('92', 'Juan', 'Ochoa', 'Olivares', 'Sistema de Desarrolo Integral Familiar(DIF)');
 INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `apeliidoM`, `area`) VALUES ('93', 'Daniela Yaneth', 'Gómez', 'Del Rio', 'Sistema de Desarrolo Integral Familiar(DIF)');
-INSERT INTO `ayuntamiento`.`personal` (`area`) VALUES ('');
+

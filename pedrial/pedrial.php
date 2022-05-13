@@ -16,7 +16,6 @@ include "../conexion.php";
 <body>
 
 <body>
-    <header>
 
     <center><img src="../imagenes/documento.PNG" width="200" id="logotrabajo"></center>
 
