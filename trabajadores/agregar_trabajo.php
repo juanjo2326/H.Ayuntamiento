@@ -22,6 +22,9 @@ include "../conexion.php";
             <div class="logo2">
                 <img src="../imagenes/logo2.jpeg" id="logo2">
             </div>
+            <div class="logo2">
+                <img src="../imagenes/escudo.png" width="200" id="logo2">
+            </div>
             <div class="search">
             <input type="search" placeholder="Buscar">
         </div>
@@ -31,13 +34,13 @@ include "../conexion.php";
         <div class="menu">
             <nav>
                 <ul>
-                    <li><a href="#!">inicio</a></li>
-                    <li><a href="./trabajadores/inicio_trabajo.php"style="text-decoration:none">Buscas Trabajo</a></li>
-                    <li><a href="rfc.php"style="text-decoration:none">Consultar RFC</a></li>
+                    <li><a href="../index.php"style="text-decoration:none">inicio</a></li>
+                    
+                    <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="#"style="text-decoration:none">Obras realizadas</a></li>
-                    <li><a href="./pedrial/inicio_pedrial.php"style="text-decoration:none">DOCUMENTO PEDRIAL</a></li>
-                    <li><a href="./personal/personal.php"style="text-decoration:none">Personal</a></li>
-                    <li><a href="./estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
+                    <li><a href="../pedrial/inicio_pedrial.php"style="text-decoration:none">DOCUMENTO PEDRIAL</a></li>
+                    <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
+                    <li><a href="../estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
                         <ul class="submenu">
                             <li><a href="" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
@@ -65,7 +68,15 @@ include "../conexion.php";
         </div>
         <br>
         
-    </header>
+    </header><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br>
+    <br><br>
     <center><img src="../imagenes/trabajo.PNG" width="200" id="logotrabajo"></center>
     
     <!--mmmmmmmm-->

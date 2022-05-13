@@ -22,7 +22,7 @@
 	    <div class="menu1">
 		    <nav>
                 <ul>
-                    <li><a href="./index.php">Regresar</a></li>
+                    <li><a href="./index.php"style="text-decoration:none">Regresar</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,6 +32,7 @@
         <ul>
             <li><a href="#">Iniciar Sesion</a></li>
             <li><a href="#">Registrarse</a></li>
+            <li><a href="#">Administracion</a></li>
         </ul>
     </div>
     <div id="formularios">

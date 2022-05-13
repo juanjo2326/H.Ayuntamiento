@@ -14,6 +14,9 @@
             <div class="logo2">
                 <img src="./imagenes/logo2.jpeg" id="logo2">
             </div>
+            <div class="logo2">
+                <img src="./imagenes/escudo.png" width="200" id="logo2">
+            </div>
             <center><img src="./imagenes/rfc.PNG" width="100" id="rfc"></center>
             <div class="search">
             <input type="search" placeholder="Buscar">
@@ -61,6 +64,8 @@
         
     </header> <br><br><br><br>
     <br><br><br><br><br><br><br>
+    <br><br><br><br>
+    <br>
     <br><br><br><br>
     <br>
    <section><center>

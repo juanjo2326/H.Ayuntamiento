@@ -12,7 +12,12 @@ include "../conexion.php";
     <link rel="stylesheet" type="text/css"href="../css/trabajo.css">
     <script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
 </head>
+
 <body>
+
+<body>
+    <header>
+
     <center><img src="../imagenes/documento.PNG" width="200" id="logotrabajo"></center>
 
     <section class="form-register">
@@ -44,7 +49,7 @@ include "../conexion.php";
           <!-- </fieldset>-->
           <!--<fieldset>-->
               Cuenta <br>
-              <input class="controls" type="text" placeholder="ceunta del pedrial" name="cuenta_pedrial" required> 
+              <input class="controls" type="text" placeholder="cuenta del pedrial" name="cuenta_pedrial" required> 
           <!-- </fieldset>-->
           <!--<fieldset>-->
               Valor <br>

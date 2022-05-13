@@ -17,6 +17,9 @@
             <div class="logo2">
                 <img src="../imagenes/logo2.jpeg" id="logo2">
             </div>
+            <div class="logo2">
+                <img src="../imagenes/escudo.png" width="200" id="logo2">
+            </div>
             <div class="logotrabajo">
             <center><img src="../imagenes/trabajar.PNG" width="100" id="logotrabajo"></center>
             </div>
@@ -66,17 +69,18 @@
     
        
     </header><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
     <center>
     <div>
           
-        <h3>Cuentas con una empresa y ocupas trabajadores registra aqui</h3><br><br>
+        <h2>Cuentas con una empresa y ocupas trabajadores registra aqui</h2><br><br>
     <a href="./agregar_trabajo.php" class="btn"style="text-decoration:none"><input type="button" value="AGREGAR EMPLEO"></a><br><br>
     
-    <p>En el H Ayuntamiento, queremos mejorar el pueblo para las personas que no <br>
+    <p><h2>En el H Ayuntamiento, queremos mejorar el pueblo para las personas que no <br>
        encuentran trabajo. En nuestro apartado de buscar trabajo tendras las opciones<br>
        de ver las empresas o negocios que estan en el municipio de Penjamillo de Degollado.<br>
        con la ayuda que se tendra se vera la informacion para que ellos te puedan buscar</br>
-       asi quedan en contacto con el administrador del contacto   </p>
+       asi quedan en contacto con el administrador del contacto  </h2> </p>
        </div> </center> <br><br>
     <section>
        <?php

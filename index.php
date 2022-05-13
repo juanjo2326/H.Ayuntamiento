@@ -18,6 +18,9 @@ include "./conexion.php";
             <div class="logo2">
                 <img src="./imagenes/logo2.jpeg" id="logo2">
             </div>
+            <div class="logo2">
+                <img src="./imagenes/escudo.png" width="200" id="logo2">
+            </div>
             <div class="search">
             <input type="search" placeholder="Buscar">
         </div>
@@ -61,7 +64,11 @@ include "./conexion.php";
         </div>
         <br>
         
-    </header>
+    </header><br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <div id="info">
         <p>
@@ -78,7 +85,8 @@ include "./conexion.php";
             Se constituyó en municipio por la Ley Territorial del 10 de diciembre de 1831.<br><br>
             En 1859, se nombro a su cabecera "Villa Echeverría", en honor al coronel Arcadio Echeverría, y en 1861, 
             se le dio el nombre de Penjamillo de Degollado, en memoria del Célebre liberal Don Santos Degollado.<br><br>
-            <img src="./imagenes/presidente.png" id="letras"> <br><br>
+            <img src="./imagenes/presidente.png" id="letras"> 
+            <br><br>
             <br>
             <br>
             <br>
@@ -101,4 +109,5 @@ include "./conexion.php";
     
 
 </body>
+
 </html>

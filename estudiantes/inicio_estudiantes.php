@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUSCAR TRABAJO</title>
-    <link rel="stylesheet" type="text/css"href="../css/estilos.css">
+    <link rel="stylesheet" type="text/css"href="../css/escuela.css">
     <!--no decetca los estilos en los trabajos-->
 </head>
 <body>
@@ -17,8 +17,11 @@
             <div class="logo2">
                 <img src="../imagenes/logo2.jpeg" id="logo2">
             </div>
+            <div class="logo2">
+                <img src="../imagenes/escudo.png" width="200" id="logo2">
+            </div>
             <div class="logotrabajo">
-            <center><img src="../imagenes/trabajar.PNG" width="100" id="logotrabajo"></center>
+            <center><img src="../imagenes/estudiantes.PNG" width="100" id="logotrabajo"></center>
             </div>
             <div class="search">
             <input type="search" placeholder="Buscar">
@@ -34,7 +37,7 @@
                     <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="#"style="text-decoration:none">Obras realizadas</a></li>
                     <li><a href="../pedrial/inicio_pedrial.php"style="text-decoration:none">Documento pedrial</a></li>
-                    <li><a href="#"style="text-decoration:none">Personal</a></li>
+                    <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
                         <ul class="submenu">
                             <li><a href="" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
@@ -66,28 +69,8 @@
     
        
     </header><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br>
     <center>
-    <div>
-          
-        <h3>Cuentas con una empresa y ocupas trabajadores registra aqui</h3>
-        <div>
-        <ul class="diapositivas">
-    <li id="diapositivas1">En campusMVP</ li>
-    <li id="diapositivas2">encontrarás los mejores</ li>
-    <li id="diapositivas">cursos online de programación</ li>
-    <li id="diapositivas4">y aprenderás de la mano</ li>
-    <li id="diapositivas5">de los mejores profesionales</ li>
- </ul>
- <nav>
-    <ul class="menu">
-        <li><a href="#diapositivas1">Diapositiva 1<//a></ li>
-        <li><a href="#diapositivas2">Diapositiva 2<//a></ li>
-        <li><a href="#diapositivas3">Diapositiva 3<//a></ li>
-        <li><a href="#diapositivas4">Diapositiva 4<//a></ li>
-        <li><a href="#diapositivas5">Diapositiva 5<//a></ li>
-</ul>
-</nav>
-        </div>
     
     <p>En el H Ayuntamiento, queremos mejorar el pueblo para las personas que no <br>
        encuentran trabajo. En nuestro apartado de buscar trabajo tendras las opciones<br>
@@ -97,22 +80,20 @@
        </div> </center> <br><br>
     <section>
        <?php
-               require 'config.php'; 
+                
                include '../conexion.php';
                
-               $re=$mysql->query("select * from empresas where estado = 1 ORDER BY vacante DESC") or die(mysql_error());
+               $re=$mysql->query("select * from escuelas") or die(mysql_error());
                while ($f=$re->fetch_array()){
                    ?>
-                   <div class="empresas">
+                   <div class="escuelas">
                        <center>
                            <div class="contenedor-img">
-                               <img class="empresas-imagen" src="../img_presas/<?php echo $f['imagen'];?>"><br>
-                               <?php echo ($f['vacante']>0) ? '' : '<p class="text-img">Agotado</p>';?>
+                               <img class="escuelas-imagen" src="./img_escu/<?php echo $f['imagen'];?>"><br>
                            </div>
                            <span><?php echo $f['nombre'];?></span><br>
-                           <span>Fecha de publicacion: <?php echo $f['fecha_publi'];?></span><br>
-                           <?php echo ($f['vacante']>0) ? 'vacante: '.$f['vacante'] : 'sin vacantes'; ?><br>
-                           <a href="./detalles_trabajo.php?id=<?php echo $f['id']; ?>&token=<?php echo
+                           <span>Direccion: <?php echo $f['direccion'];?></span><br>
+                           <a href="./detalles_escuela.php?id=<?php echo $f['id']; ?>&token=<?php echo
                            hash_hmac('sha1', $f['id'], KEY_TOKEN); ?>" class="btn 
                            btn-primary"> ver detalles</a>
 

@@ -14,6 +14,9 @@
             <div class="logo2">
                 <img src="../imagenes/logo2.jpeg" id="logo2">
             </div>
+            <div class="logo2">
+                <img src="../imagenes/escudo.png" width="200" id="logo2">
+            </div>
             <center><img src="../imagenes/carpeta.PNG" width="100" id="rfc"></center>
             <div class="search">
             <input type="search" placeholder="Buscar">
@@ -41,11 +44,11 @@
                     </li>
                         <?php
 		                if(isset($_SESSION['Usuario'])){ ?>
-		            <li><a href="./login/cerrar.php">style="text-decoration:none">cerrar Sesion</a></li>
+		            <li><a href="./login/cerrar.php"style="text-decoration:none">cerrar Sesion</a></li>
 		                <?php
 		                } else { 
 		                ?>
-	                <li><a href="./login.php"style="text-decoration:none">>Iniciar Sesion O Registrarse</a></li>
+	                <li><a href="./login.php"style="text-decoration:none">Iniciar Sesion O Registrarse</a></li>
 		                <?php
 		                }
 		                ?>
@@ -61,6 +64,8 @@
     </header><br><br><br><br>
 <br><br><br><br><br><br><br>
 <br><br><br><br>
+<br>
+<br><br><br>
 <br>
 
     <section><center>
