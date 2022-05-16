@@ -16,6 +16,9 @@
         <div class="logo2">
             <img src="./imagenes/logo2.jpeg" id="logo2">
         </div>
+        <div class="logo2">
+                <img src="./imagenes/escudo.png" width="200" id="logo2">
+            </div>
     </div>
 
     <div class="container_menu">

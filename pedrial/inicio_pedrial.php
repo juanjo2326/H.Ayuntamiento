@@ -61,12 +61,10 @@
        
 
         
-    </header><br><br><br><br>
-<br><br><br><br><br><br><br>
-<br><br><br><br>
-<br>
-<br><br><br>
-<br>
+</header><br>
+
+    </header><br>
+
 
     <section><center>
 
@@ -92,17 +90,25 @@
        <a  class="botons" href="pedrial.php"> <input type="button" value="REGISTRAR DOCUEMNTO "></a>
         
     </p>
-</div><br><br><br><br>
-<br><br><br><br><br><br><br>
+</div><br><br>
 
 <p>
 <img src="../imagenes/consultar.png" width="200" id="sat"><br>
     <p><h2> consultar tu documento pedrial, se debera de insertar el numero de telefono que se coloco.</h2><br>
+    <center><h1>Formulario de registro</h1></center>
+    <form action="consulta_predial.php" method = "post" enctype="multipart/form-data">
+          <!--<fieldset>-->
+              Colocar numero telefonico <br>
+              <input class="controls" type="text" placeholder="Nombre de la empresa" name="telefono" required> <br><br>
+              <input class="botons" type="submit" name="accion" value="enviar" class="Reagistrar">
+
+
+</form>
        </center>
     </p>
     </center>
 
-</section>
+</section><br><br><br><br><br><br>
 
 
 

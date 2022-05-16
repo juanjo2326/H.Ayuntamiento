@@ -207,7 +207,7 @@ nav ul li ul li a:hover{
 }
 
 .form-register .botons{
-    width: 400px;
+    width: 290px;
     background: rgb(227, 103, 243);
     border: none;
     padding: 12px;
@@ -217,7 +217,7 @@ nav ul li ul li a:hover{
 }
 
 .form-register .subir{
-    width: 385px;
+    width: 346px;
     background: rgb(227, 103, 243);
     border: none;
     padding: 12px;
@@ -234,4 +234,5 @@ nav ul li ul li a:hover{
     justify-content: space-between;
     padding: 20px;
 }
+
 

@@ -16,6 +16,10 @@ include "../conexion.php";
 <body>
 
 <body>
+<<<<<<< Updated upstream
+=======
+    <header>
+>>>>>>> Stashed changes
 
     <center><img src="../imagenes/documento.PNG" width="200" id="logotrabajo"></center>
 

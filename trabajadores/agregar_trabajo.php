@@ -54,11 +54,11 @@ include "../conexion.php";
                     </li>
                         <?php
 		                if(isset($_SESSION['Usuario'])){ ?>
-		            <li><a href="./login/cerrar.php"style="text-decoration:none">>cerrar Sesion</a></li>
+		            <li><a href="../login/cerrar.php"style="text-decoration:none">>cerrar Sesion</a></li>
 		                <?php
 		                } else { 
 		                ?>
-	                <li><a href="./login.php"style="text-decoration:none">Iniciar Sesion O Registrarse</a></li>
+	                <li><a href="../login.php"style="text-decoration:none">Iniciar Sesion O Registrarse</a></li>
 		                <?php
 		                }
 		                ?>
@@ -102,7 +102,7 @@ include "../conexion.php";
           <!-- </fieldset>-->
          <!--<fieldset>-->
               Fecha de publicacion <br>
-              <input class="controls" type="text" placeholder="Fecha de publicacion" name="fecha_publi" required> 
+              <input class="controls" type="date" placeholder="Fecha de publicacion" name="fecha_publi" required> 
           <!-- </fieldset>-->
           <!--<fieldset>-->
               Vacantes <br>

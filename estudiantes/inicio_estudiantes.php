@@ -86,11 +86,14 @@
                $re=$mysql->query("select * from escuelas") or die(mysql_error());
                while ($f=$re->fetch_array()){
                    ?>
+
                    <div class="escuelas">
                        <center>
                            <div class="contenedor-img">
-                               <img class="escuelas-imagen" src="./img_escu/<?php echo $f['imagen'];?>"><br>
+                               <img class="escuelas-imagen" src="../img_escu/<?php echo $f['imagen1'];?>"> <br>
                            </div>
+
+                           
                            <span><?php echo $f['nombre'];?></span><br>
                            <span>Direccion: <?php echo $f['direccion'];?></span><br>
                            <a href="./detalles_escuela.php?id=<?php echo $f['id']; ?>&token=<?php echo
