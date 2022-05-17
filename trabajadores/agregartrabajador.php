@@ -16,9 +16,7 @@
             <div class="logo2">
                 <img src="../imagenes/logo2.jpeg" id="logo2">
             </div>
-            <div class="search">
-            <input type="search" placeholder="Buscar">
-        </div>
+
         </div>
 
         <div class="container_menu">

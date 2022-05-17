@@ -18,9 +18,6 @@
                 <img src="../imagenes/escudo.png" width="200" id="logo2">
             </div>
             <center><img src="../imagenes/carpeta.PNG" width="100" id="rfc"></center>
-            <div class="search">
-            <input type="search" placeholder="Buscar">
-        </div>
         </div>
 
         <div class="container_menu">
@@ -29,6 +26,7 @@
                 <ul>
                     <li><a href="../index.php"style="text-decoration:none">inicio</a></li>
                     <li><a href="../trabajadores/inicio_trabajo.php"style="text-decoration:none">Buscas Trabajo</a></li>
+                    <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="#"style="text-decoration:none">Obras realizadas</a></li>
                     <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="../estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
@@ -82,25 +80,54 @@
     En las transacciones inmobiliarias, el impuesto predial es considerado igual de importante que otros impuestos <br>
      como e ISAI y el ISR, y para calcularlo se toman en cuenta distintas características, tanto del terreno <br>
      en el que una vivienda se encuentra construida, como de condiciones externas determinadas por un avalúo catastral.</h2></p><br>
-    <p><h3>Si todavia no registras el documento del predial<br>
+    <p><h3 style="border-radius: 20px;
+    margin: 10px 15px;
+    display: inline-flex;
+    background: silver;
+    padding: 10px;">Si todavia no registras el documento del predial<br>
        deberas de registrarlo para que no tenga perdidas con el documento<br>
        se debe de colocar cada dato y por supuesto el numero de telefono <br>
        ya que por ese medio se puede hacer la consulta de su documento pedrial.</h3></p>
       <br>
-       <a  class="botons" href="pedrial.php"> <input type="button" value="REGISTRAR DOCUEMNTO "></a>
+       <a  class="botons" href="pedrial.php"> <input type="button" value="REGISTRAR DOCUMENTO "
+       style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background: rgb(186,25,201);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;"></a>
         
     </p>
 </div><br><br>
 
 <p>
 <img src="../imagenes/consultar.png" width="200" id="sat"><br>
-    <p><h2> consultar tu documento pedrial, se debera de insertar el numero de telefono que se coloco.</h2><br>
-    <center><h1>Formulario de registro</h1></center>
+    <p><h2> consultar tu documento predial, se debera de insertar el numero de telefono que se coloco.</h2><br>
+    <center><h1>Consultar documento predial</h1></center><br>
     <form action="consulta_predial.php" method = "post" enctype="multipart/form-data">
           <!--<fieldset>-->
-              Colocar numero telefonico <br>
-              <input class="controls" type="text" placeholder="Nombre de la empresa" name="telefono" required> <br><br>
-              <input class="botons" type="submit" name="accion" value="enviar" class="Reagistrar">
+              Colocar numero telefonico <br><br>
+              <input class="controls" type="text" placeholder="Numero telefonico" name="telefono" 
+              required style="padding: 14px;
+                              width: 300px;
+                              border-radius: 9px;"> <br><br>
+              <input class="botons" type="submit" name="accion" value="enviar" 
+              style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+                     color: white;
+                     padding: 15px 32px;
+                     text-align: center;
+                     text-decoration: none;
+                     display: inline-block;
+                     font-size: 16px;
+                     background: rgb(186,25,201);
+                     border: none;
+                     border-radius: 8px;
+                     cursor: pointer;"class="Reagistrar">
 
 
 </form>

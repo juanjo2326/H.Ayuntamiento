@@ -37,9 +37,6 @@
             <div class="logotrabajo">
             <center><img src="../imagenes/trabajar.PNG" width="100" id="logotrabajo"></center>
             </div>
-            <div class="search">
-            <input type="search" placeholder="Buscar">
-        </div>
         </div>
 
         <div class="container_menu">
@@ -49,7 +46,7 @@
                     <li><a href="../index.php"style="text-decoration:none">inicio</a></li>
                     <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="#"style="text-decoration:none">Obras realizadas</a></li>
-                    <li><a href="../pedrial/inicio_pedrial.php"style="text-decoration:none">Documento pedrial</a></li>
+                    <li><a href="../pedrial/inicio_pedrial.php"style="text-decoration:none">Documento predial</a></li>
                     <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="../estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
@@ -78,21 +75,27 @@
 
         </div>
         </div> 
-        
 
-    
-       
-<<<<<<< Updated upstream
-    </header><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br>
-=======
+    </header><br><br>
+
     </header><br>
->>>>>>> Stashed changes
+
     <center>
     <div>
           
         <h2>Cuentas con una empresa y ocupas trabajadores registra aqui</h2><br><br>
-    <a href="./agregar_trabajo.php" class="btn"style="text-decoration:none"><input type="button" value="AGREGAR EMPLEO"></a><br><br>
+    <a href="./agregar_trabajo.php" class="btn" style="text-decoration:none;"><input type="button" value="AGREGAR EMPLEO" 
+    style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background: rgb(186,25,201);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;"></a><br><br>
     
     <p><h2>En el H Ayuntamiento, queremos mejorar el pueblo para las personas que no <br>
        encuentran trabajo. En nuestro apartado de buscar trabajo tendras las opciones<br>

@@ -8,23 +8,46 @@ include "../conexion.php";
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Registrar Pedrial</title>
+    <title>Registrar Predial</title>
     <link rel="stylesheet" type="text/css"href="../css/trabajo.css">
     <script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
 </head>
 
 <body>
+    <header>
+    <div class="header_superior">
+            <div class="logo">
+            <img  src="../imagenes/logo.jpg" id="logo">
+            </div>
+            <div class="logo2">
+                <img src="../imagenes/logo2.jpeg" id="logo2">
+            </div>
+            <div class="logo2">
+                <img src="../imagenes/escudo.png" width="200" id="logo2">
+            </div>
+            <center><img src="../imagenes/carga.PNG" width="100" id="rfc"></center>
+        </div>
+    </header><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <body>
-<<<<<<< Updated upstream
-=======
-    <header>
->>>>>>> Stashed changes
+<a href="./inicio_pedrial.php" class="btn" style="text-decoration:none;"><input type="button" value="Regresar" 
+    style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background: rgb(186,25,201);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;">
+
 
     <center><img src="../imagenes/documento.PNG" width="200" id="logotrabajo"></center>
 
     <section class="form-register">
-    <center><h1>Formulario de registro pedrial</h1></center>
+    <center><h1>Formulario de registro predial</h1></center>
     <form action="./alta_pedrial.php" method = "post" enctype="multipart/form-data">
           <!--<fieldset>-->
               Tipo de comprovante <br>
@@ -94,7 +117,7 @@ include "../conexion.php";
 
 
     </form>
-</section>
+</section><br><br><br><br><br>
 
 
     

@@ -35,9 +35,6 @@
                 <img src="./imagenes/escudo.png" width="200" id="logo2">
             </div>
             <center><img src="./imagenes/rfc.PNG" width="100" id="rfc"></center>
-            <div class="search">
-            <input type="search" placeholder="Buscar">
-        </div>
         </div>
 
         <div class="container_menu">
@@ -47,7 +44,7 @@
                     <li><a href="index.php"style="text-decoration:none">inicio</a></li>
                     <li><a href="./trabajadores/inicio_trabajo.php"style="text-decoration:none">Buscas Trabajo</a></li>
                     <li><a href="#"style="text-decoration:none">Obras realizadas</a></li>
-                    <li><a href="./pedrial/inicio_pedrial.php"style="text-decoration:none">DOCUMENTO PEDRIAL</a></li>
+                    <li><a href="./pedrial/inicio_pedrial.php"style="text-decoration:none">DOCUMENTO PreDIAL</a></li>
                     <li><a href="./personal/personal.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="./estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
@@ -114,7 +111,17 @@
                    te daran la lista de los docuentos que deberas llevar
                </li>
            </ul><br>
-           <center><a class="botons" href="https://citas.sat.gob.mx/"> <input type="button" value="CITAS"></a></center><br>
+           <center><a class="botons" href="https://citas.sat.gob.mx/"> <input type="button" value="CITAS" style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background: rgb(186,25,201);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;"></a></center><br><br>
            <img src="./imagenes/sat.PNG" width="200" id="sat">
            <h3> para consultar tú RFC es obligatorio mandarte <br>
            a la parte del SAT donde se deben de colocar los caracteres <br>
@@ -129,11 +136,18 @@
                <li>5.-CODIGO POSTAL</li>
                <li>6.-ERES EMPLEADO</li>
                <li>7.-deberas ingresar el texto de la imagen</li><br>
-               <a  class="botons" href="https://www54.sat.gob.mx/curp/Consult"> <input type="button" value="CONSULTAR RFC " style="width: 200px;
-    background: springgreen;
-    -webkit-text-stroke: medium;
-    height: 40px;
-    border-radius: 90px;"></a><br>
+               <a  class="botons" href="https://www54.sat.gob.mx/curp/Consult"> <input type="button" value="CONSULTAR RFC " 
+               style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background: rgb(186,25,201);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;"></a><br>
                <br>
                <br>
                <br>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUSCAR TRABAJO</title>
-    <link rel="stylesheet" type="text/css"href="../css/escuela.css">
+    <link rel="stylesheet" type="text/css"href="../css/estilos.css">
     <!--no decetca los estilos en los trabajos-->
 </head>
 <body>
@@ -66,45 +66,8 @@
 
     
        
-    </header><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br>
-    <center>
-    
-    <p>En el H Ayuntamiento, queremos mejorar el pueblo para las personas que no <br>
-       encuentran trabajo. En nuestro apartado de buscar trabajo tendras las opciones<br>
-       de ver las empresas o negocios que estan en el municipio de Penjamillo de Degollado.<br>
-       con la ayuda que se tendra se vera la informacion para que ellos te puedan buscar</br>
-       asi quedan en contacto con el administrador del contacto   </p>
-       </div> </center> <br><br>
-    <section>
-       <?php
-                
-               include '../conexion.php';
-               
-               $re=$mysql->query("select * from escuelas") or die(mysql_error());
-               while ($f=$re->fetch_array()){
-                   ?>
+    </header>
 
-                   <div class="escuelas">
-                       <center>
-                           <div class="contenedor-img">
-                               <img class="escuelas-imagen" src="../img_escu/<?php echo $f['imagen1'];?>"> <br>
-                           </div>
-
-                           
-                           <span><?php echo $f['nombre'];?></span><br>
-                           <span>Direccion: <?php echo $f['direccion'];?></span><br>
-                           <a href="./detalles_escuela.php?id=<?php echo $f['id']; ?>&token=<?php echo
-                           hash_hmac('sha1', $f['id'], KEY_TOKEN); ?>" class="btn 
-                           btn-primary"> ver detalles</a>
-
-               </center>
-               </div>
-               <?php
-               } 
-               ?>
-        </section> 
-
-    
+                    
 </body>
 </html>

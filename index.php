@@ -21,9 +21,7 @@ include "./conexion.php";
             <div class="logo2">
                 <img src="./imagenes/escudo.png" width="200" id="logo2">
             </div>
-            <div class="search">
-            <input type="search" placeholder="Buscar">
-        </div>
+
         </div>
 
         <div class="container_menu">
@@ -33,8 +31,8 @@ include "./conexion.php";
                     <li><a href="#!">inicio</a></li>
                     <li><a href="./trabajadores/inicio_trabajo.php"style="text-decoration:none">Buscas Trabajo</a></li>
                     <li><a href="rfc.php"style="text-decoration:none">Consultar RFC</a></li>
-                    <li><a href="#"style="text-decoration:none">Obras realizadas</a></li>
-                    <li><a href="./pedrial/inicio_pedrial.php"style="text-decoration:none">DOCUMENTO PEDRIAL</a></li>
+                    <li><a href="./obras/inicio_obras.php"style="text-decoration:none">Obras realizadas</a></li>
+                    <li><a href="./pedrial/inicio_pedrial.php"style="text-decoration:none">DOCUMENTO PREDIAL</a></li>
                     <li><a href="./personal/personal.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="./estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>

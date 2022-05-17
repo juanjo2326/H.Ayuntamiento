@@ -68,16 +68,25 @@ include "../conexion.php";
         </div>
         </div>
         <br>
+
         
-    </header><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br><br><br><br><br>
-    <br><br><br><br><br><br><br>
+    </header>
     <br>
     <br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <a href="./inicio_trabajo.php" class="btn" style="text-decoration:none;"><input type="button" value="Regresar" 
+    style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background: rgb(186,25,201);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;">
     <center><img src="../imagenes/trabajo.PNG" width="200" id="logotrabajo"></center>
     
     <!--mmmmmmmm-->
