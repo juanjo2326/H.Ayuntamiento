@@ -29,9 +29,7 @@ nombre varchar (40)default null,
 habitantes int (11)not null,
 primary key (idranch));
 
-<<<<<<< Updated upstream
 
-=======
 select * from rancho;
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('1', 'Ansihuacuaro', '1095');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('2', 'Arroyuelos', '258');
@@ -92,16 +90,12 @@ INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES (
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('57', 'Vado Blanco', '140');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('58', 'Zerecuato', '193');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('59', 'Ziquítaro', '1906');
->>>>>>> Stashed changes
+
 
 -- -------------------------------------------------------------
 -- tabla de datos para trabajadores ----------------------------
 -- -------------------------------------------------------------
-<<<<<<< Updated upstream
 
-=======
-drop table datos;
->>>>>>> Stashed changes
 create table trabajadores (
 id_trabajador int (11) not null auto_increment,
 nombre varchar (40) not null,
@@ -115,24 +109,19 @@ imagen varchar (40) not null,
 tipo smallint(2)not null,
 primary key (id_trabajador));
 
-<<<<<<< Updated upstream
-=======
+
+
 select * from trabajadores;
 
 INSERT INTO `ayuntamiento`.`trabajadores` (`id_trabajador`, `nombre`, `apellidoPa`, `apellidoMa`, `fecha_nacimiento`, `telefono`, `rfc`, `direccion`, `imagen`, `tipo`) 
              VALUES ('1', 'Juan Jose', 'Gallardo', 'Suarez', '1998-02-26', '3521429722', 'GASJ980226CF6', 'calledeportiva #86 tirimacuaro', '1', '1');
->>>>>>> Stashed changes
+
 
 
 -- -------------------------------------------------------
 -- tabla de datos de empresas ----------------------------
 -- -------------------------------------------------------------
-<<<<<<< Updated upstream
 
-
-=======
-drop table empresas;
->>>>>>> Stashed changes
 create table empresas(
 id int (11) not null auto_increment,
 nombre varchar (40) not null,
@@ -147,14 +136,13 @@ imagen varchar(40) not null,
 estado char(1) not null,
 primary key(id)
 );
-<<<<<<< Updated upstream
-=======
+
 select * from empresas;
 INSERT INTO `ayuntamiento`.`empresas` (`id`, `nombre`, `horario_entrada`, `horario_salida`, `requisitos`, `fecha_publi`, `telefono`, `vacante`, `direccion`,`imagen`, `estado`) 
 VALUES ('1', 'arctitec', '8 am', '4 pm', 'arquitecto', '2022-03-30', '1352816029', '1','penjamillo', 'inge.jpg', '1');
 INSERT INTO `ayuntamiento`.`empresas` (`id`, `nombre`, `horario_entrada`, `horario_salida`, `requisitos`, `fecha_publi`, `telefono`, `vacante`,`direccion`, `imagen`, `estado`) 
 VALUES ('2', 'ventec', '8 am', '4 pm', 'ventas', '2022-03-30', '1352816039','1','penjamillo', 'ventas.jpg', '1');
->>>>>>> Stashed changes
+
 
 
 -- ----------------------------------------------------
@@ -180,6 +168,7 @@ periodo_pago varchar (40) not null,
 clave smallint (6) not null,
 telefono varchar (10) not null,
 primary key(id_pedrial));
+
 
 
 -- ----------------------------------------------------
@@ -282,8 +271,7 @@ select * from personal where area='Sistemas de Desarrollo Integral Familiar(DIF)
 select * from personal where nombre='nestor daniel';
 
 -- datos del persona --
-<<<<<<< Updated upstream
-=======
+
 INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `apeliidoM`, `telefono_area`, `area`) VALUES ('1', 'Xochit Kareli', 'Del Rio', 'Carranza', '359524-2046', 'Presidencia');
 INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `apeliidoM`, `area`) VALUES ('2', 'yesenia ', 'Ramírez', 'Duarte', 'Presidencia');
 INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `apeliidoM`, `area`) VALUES ('3', 'Fernando', 'Montes De Oca', 'Ruiz', 'presidencia');
@@ -377,15 +365,11 @@ INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `ap
 INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `apeliidoM`, `area`) VALUES ('91', 'Ayde Vanessa', 'Ibarra', 'Quezada', 'Sistema de Desarrolo Integral Familiar(DIF)');
 INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `apeliidoM`, `area`) VALUES ('92', 'Juan', 'Ochoa', 'Olivares', 'Sistema de Desarrolo Integral Familiar(DIF)');
 INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `apeliidoM`, `area`) VALUES ('93', 'Daniela Yaneth', 'Gómez', 'Del Rio', 'Sistema de Desarrolo Integral Familiar(DIF)');
->>>>>>> Stashed changes
 
 -- ----------------------------------------------------
 -- tabla de obras--------------------------------------
 -- ----------------------------------------------------
-<<<<<<< Updated upstream
-drop table obras;
-=======
-drop table obras;
+
 create table obras(
 id_obra int (11)not null auto_increment,
 nombre varchar (40)not null,
@@ -438,4 +422,4 @@ carrera4 varchar (20),
 primary key(id));
 select * from escuelas;
 
->>>>>>> Stashed changes
+

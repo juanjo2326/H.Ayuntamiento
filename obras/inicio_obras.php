@@ -33,7 +33,7 @@
                     <li><a href="../index.php"style="text-decoration:none">inicio</a></li>
                     <li><a href="../trabajadores/inicio_trabajo.php"style="text-decoration:none">Buscas Trabajo</a></li>
                     <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
-                    <li><a href="#"style="text-decoration:none">Obras realizadas</a></li>
+                    
                     <li><a href="../pedrial/inicio_pedrial.php"style="text-decoration:none">Documento predial</a></li>
                     <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
@@ -48,11 +48,11 @@
                         </li>
                         <?php
 		                if(isset($_SESSION['Usuario'])){ ?>
-		            <li><a href="./login/cerrar.php"style="text-decoration:none">cerrar Sesion</a></li>
+		            <li><a href="../login/cerrar.php"style="text-decoration:none">cerrar Sesion</a></li>
 		                <?php
 		                } else { 
 		                ?>
-	                <li><a href="./login.php"style="text-decoration:none">Iniciar Sesion O Registrarse</a></li>
+	                <li><a href="../login.php"style="text-decoration:none">Iniciar Sesion O Registrarse</a></li>
 		                <?php
 		                }
 		                ?>

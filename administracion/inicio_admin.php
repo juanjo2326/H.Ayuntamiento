@@ -7,7 +7,7 @@ include "./conexion.php";
 <head>
     <meta charset="UTF-8">
     <title>H Ayuntamiento 2021-2024</title>
-    <link rel="stylesheet" type="text/css" href="./css/estilosinicio.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilosinicio.css">
 </head>
 <body>
     <header>

@@ -9,7 +9,7 @@
                     '".$_REQUEST['password']."',
                     '".$_REQUEST['telefono']."',
                     '".$_REQUEST['correo']."',
-                    3)");
+                    1)");
             
             
             header("Location: ./index.php");
