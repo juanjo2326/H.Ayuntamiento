@@ -404,8 +404,8 @@ primary key (id_estudiante));
 drop table escuelas;
 create table escuelas(
 id int (11) not null auto_increment,
-nombre varchar (45) not null,
-direccion varchar (45)not null,
+nombre varchar (100) not null,
+direccion varchar (100)not null,
 telefono varchar (10)not null,
 direcctor varchar (40)not null,
 clave varchar (20),
@@ -421,5 +421,7 @@ carrera3 varchar (20),
 carrera4 varchar (20),
 primary key(id));
 select * from escuelas;
+INSERT INTO `ayuntamiento`.`escuelas` (`id`, `nombre`, `direccion`, `telefono`, `direcctor`, `clave`, `horarios`, `tipo`, `comentarios`, `imagen1`) VALUES ('1', 'Hidalgo', 'ave centro platanal #267 Penjamillo ', '3595240206', 'Francisco Ramirez Cervantes', 'Pnl102938213341', '8 am a 6 pm', 'Escuela Primaria', 'Escuela primara para niños de 6 años ', 'hidalgo.jpg');
+
 
 

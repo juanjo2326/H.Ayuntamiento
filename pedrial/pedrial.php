@@ -11,6 +11,7 @@ include "../conexion.php";
     <title>Registrar Predial</title>
     <link rel="stylesheet" type="text/css"href="../css/trabajo.css">
     <script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>

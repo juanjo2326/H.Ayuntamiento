@@ -1,39 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Detalles de los trabajos</title>
-    <link ewl="stylesheet" type="text/css" href="../css/detallestrabajo.css">
-    <!-- <script type="text/javascript" href="."></script> -->
-    <!--no detecta el css-->
+    <title>H Ayuntamiento 2021-2024</title>
+    <link rel="stylesheet" type="text/css"href="../css/estilos.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header class="header_superior">
-        <img src="../imagenes/logo2.jpeg" alt="logo2">
-        <a href="./sulicitudtrabajo.php" title="ver solicitudes">
-            <img src="../imagenes/trabajo.png" >
-        </a>
-</header>
-    <nav class="container_menu">
-      <menu>
-        <img src="../imagenes/logo.jpg"  alt=".index.php">inicio</a></li>
-        <?php
-        //if ( $usuario==null ) { ?>
-        <li><a href=".login.php" tittle="Iniciar sesion">
-        Inicio de session
-        </a></li>
-        <li><a href="./registrarse.php" tittle="Refistrarse">
-        registrarse
-        </a></li>
-    <?php //}else{ ?>
-        <li><a href="login/cerrar.php" tittle="Cerrar sesion">
-        Cerrar sesion
-        </a></li>
-        <?php// } ?>
-    </menu>
-    </nav>
-    <section>
+    <header>
+        <div class="header_superior">
+            <div class="logo">
+            <img  src="../imagenes/logo.jpg" id="logo">
+            </div>
+            <div class="logo2">
+                <img src="../imagenes/logo2.jpeg" id="logo2">
+            </div>
+            <div class="logo2">
+                <img src="../imagenes/escudo.png" width="200" id="logo2">
+            </div>
+            <center><img src="../imagenes/trabajar.PNG" width="100" id="rfc"></center>
+        </div>
+
+        <div class="container_menu">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="../index.php"style="text-decoration:none">inicio</a></li>
+                    <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
+                    <li><a href="../obras/inicio_obras.php"style="text-decoration:none">Obras realizadas</a></li>
+                    <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
+                    <li><a href="../estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
+                    <li><a href="#"style="text-decoration:none">Ayuda</a>
+                        <ul class="submenu">
+                            <li><a href="" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
+                            <li><a href="" href○="#"style="text-decoration:none">Ayuda a problemas personales</a></li>
+                            <li><a href="" href○="#"style="text-decoration:none">Ayuda adictos</a></li>
+                            <li><a href="" href○="#"style="text-decoration:none">contactanos</a></li>
+                            <li><a href="" href○="#"style="text-decoration:none">Emergencias</a></li>
+                            <li><a href="" href○="#"style="text-decoration:none">Quejas o sugerencias</a></li>
+                        </ul> 
+                    </li>
+                        <?php
+		                if(isset($_SESSION['Usuario'])){ ?>
+		            <li><a href="../login/cerrar.php"style="text-decoration:none">cerrar Sesion</a></li>
+		                <?php
+		                } else { 
+		                ?>
+	                <li><a href="../login.php"style="text-decoration:none">Iniciar Sesion O Registrarse</a></li>
+		                <?php
+		                }
+		                ?>
+                    </ul>
+            </nav>
+        
+        </div>
+        </div>
+
+    <section><br>
+    <a href="./inicio_trabajo.php" class="btn" style="text-decoration:none;"><input type="button" value="Regresar" 
+    style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background: rgb(186,25,201);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;"></a><br><br><br><br><br>
+
         <?php
             require 'config.php'; 
              include '../conexion.php';
@@ -46,14 +82,24 @@
         ?>
 
          <center>
-             <div class="container">
-             <img class="imgen_presas" src="../img_presas/<?php echo $f['imagen'];?>"><br>
+             <div class="container" style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background: rgb(186,25,201);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;">
+             <img class="imgen_presas" style="border-radius: 20px;" src="../img_presas/<?php echo $f['imagen'];?>"><br>
              <span><?php echo $f['nombre'];?></span><br>
-             <span>Horario de entrada: <?php echo $f['horario_entrada'];?></span><br>
-             <span>Horario de salida: <?php echo $f['horario_salida'];?></span><br>
-             <span>Requisitos: <?php echo $f['requisitos'];?></span><br>
-             <span>Fecha de publicación: <?php echo $f['fecha_publi'];?></span><br>
-             <span>Numero telefonico: <?php echo $f['telefono'];?></span><br>
+             <span><h3>Horario de entrada:</h3> <?php echo $f['horario_entrada'];?></span><br>
+             <span><h3>Horario de salida: </h3><?php echo $f['horario_salida'];?></span><br>
+             <span><h3>Requisitos:</h3> <?php echo $f['requisitos'];?></span><br>
+             <span><h3>Fecha de publicación: </h3><?php echo $f['fecha_publi'];?></span><br>
+             <span><h3>Numero telefonico:</h3> <?php echo $f['telefono'];?></span><br>
              <?php echo ($f['vacante']>0) ? 'Vacantes: '.$f['vacante']: 'sin vacantes';?><br>
              <?php if($f['vacante']>=0){?>
              
@@ -66,16 +112,17 @@
          <?php
         }
         ?>
+        <br><br><br><br><br><br>
                    <div class="footer" style="background: none repeat scroll 0 0 rgb(186,25,201);
     color: white;
     padding: 20px 0 20px;
     margin-top: 19px;
     font-size: 19px;
-    width: 2000px;
+    width: 1900px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 51px;
-    padding: 20px 0px;">
+    grid-gap: 1px;
+    padding: 3px 0px;">
                <div class="col-md-3">
                    <img  width="100px;" src="../imagenes/logo.jpg">
                    <img width="100px;" src="../imagenes/logo2.jpeg">

@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>BUSCAS trabajo</title>
     <link rel="stylesheet" href="/css/trabajo.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>

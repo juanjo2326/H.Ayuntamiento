@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>H Ayuntamiento 2021-2024</title>
     <link rel="stylesheet" type="text/css"href="../css/estilos.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>

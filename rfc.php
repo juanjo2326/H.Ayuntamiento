@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>H Ayuntamiento 2021-2024</title>
     <link rel="stylesheet" type="text/css"href="css/estilosinicio.css">
-   
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <style type="text/css">
             h2, h3, h1{text-align: -webkit-left;
     width: 500px;
@@ -150,7 +150,7 @@
     padding: 20px 0 20px;
     margin-top: 19px;
     font-size: 19px;
-    width: 2000px;
+    width: 1900px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 51px;
