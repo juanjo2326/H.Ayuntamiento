@@ -1,84 +1,5 @@
 body{font-family: Arial; background-color: white; box-sizing: border-box; padding: 10px;}
 
-.header_superior{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: left;
-    justify-content: space-between;
-    padding: 1px;
-}
-.logo img{
-    width: 250px;
-}
-
-.logo2 img{
-    width: 200px;
-    
-    display: inline-block;
-    vertical-align: top;
-}
-.container_menu{
-    width: 100%;
-    padding: 70px;
-    
-    background: rgb(186, 25, 201);
-    padding: 0px 20px;
-}
-.menu1{
-    max-width: 1200px;
-    margin: auto;
-    height: 100px;
-
-}
-nav{
-    height: 100%;
-
-}
-nav > ul{
-    height: 100%;
-    display: flex;
-}
-nav  ul  li{
-    height: 100%;
-    list-style: none;
-    position: relative;
-}
-nav > ul > li >a{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 14px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-    transition:  all 300ms ease;
-}
-nav > ul > li >a:hover{
-    transform: scale(1.1);
-    background: rgb(227, 103, 243);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0.5);
-}
-#selected{
-    transform: scale(1.1);
-    background: rgb(227, 103, 243);
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0.5);
-}
-
-.container_menu{
-    width: 100%;
-    padding: 70px;
-    
-    background: rgb(186, 25, 201);
-    padding: 0px 20px;
-}
-.menu{
-    max-width: 1200px;
-    margin: auto;
-    height: 100px;
-}
-
 form{
     background-color: white;
     border-radius: 0 0 3px 3px;
@@ -86,7 +7,7 @@ form{
     font-size: 0.8em;
     padding: 20px;
     margin: 0 auto;
-    width: 500px;
+    width: 600px;
 }
 
 input, textarea{
@@ -122,7 +43,7 @@ input, textarea{
     color: rgb(199, 88, 209);
     padding: 10px 10px 12.5px 10px;
     border: solid 1px #ccc;
-    max-height: 35px;
+    max-height: 55px;
     margin-right: -5px;
     vertical-align: top;
 }
@@ -169,14 +90,6 @@ input, textarea{
 
 .columns .field{
     width: 170px;
-}
-
-#form_register{
-    display: none;
-}
-
-#form_session p{
-    color: black;
 }
 
 .btn{

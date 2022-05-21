@@ -5,7 +5,7 @@ use ayuntamiento;
 -- -------------------------------------------------
 -- creacion de usuarios ----------------------------
 -- -------------------------------------------------
-
+drop table usuario;
 create table usuario(
 idusu int(11) not null auto_increment,
 nombre varchar(40) default null,
@@ -23,6 +23,7 @@ primary key (idusu));
 -- --------------------------------------------------------------
 -- creacion de lugares ------------------------------------------
 -- --------------------------------------------------------------
+drop table rancho;
 create table rancho(
 idranch int(11)not null auto_increment,
 nombre varchar (40)default null,
@@ -38,7 +39,7 @@ INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES (
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('5', 'Cerrito de la Gloria', '35');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('6', 'Colonia el Platanal', '424');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('7', 'Colonia Natalio Vázquez Pallarez(Norica)', '51');
-INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('8', 'El Cgupadero', '16');
+INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('8', 'El Chupadero', '16');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('9', 'El Colorado', '615');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('10', 'El cucuno', '33');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('11', 'El Guayabo', '148');
@@ -77,7 +78,7 @@ INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES (
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('44', 'Palo Blanco', '36');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('45', 'Patambarillo', '578');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('46', 'Patámbaro', '363');
-INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('47', 'Penjamillo de Degollador', '3378');
+INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('47', 'Penjamillo de Degollado', '3378');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('48', 'Petazícuaro', '48');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('49', 'Rancho de García', '53');
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('50', 'Rancho Seco', '16');
@@ -95,7 +96,11 @@ INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES (
 -- -------------------------------------------------------------
 -- tabla de datos para trabajadores ----------------------------
 -- -------------------------------------------------------------
+<<<<<<< Updated upstream
 
+=======
+drop table trabajadores;
+>>>>>>> Stashed changes
 create table trabajadores (
 id_trabajador int (11) not null auto_increment,
 nombre varchar (40) not null,
@@ -114,14 +119,22 @@ primary key (id_trabajador));
 select * from trabajadores;
 
 INSERT INTO `ayuntamiento`.`trabajadores` (`id_trabajador`, `nombre`, `apellidoPa`, `apellidoMa`, `fecha_nacimiento`, `telefono`, `rfc`, `direccion`, `imagen`, `tipo`) 
+<<<<<<< Updated upstream
              VALUES ('1', 'Juan Jose', 'Gallardo', 'Suarez', '1998-02-26', '3521429722', 'GASJ980226CF6', 'calledeportiva #86 tirimacuaro', '1', '1');
+=======
+             VALUES ('1', 'Gustavo Eduardo', 'Rodriguez', 'Lopez', '1997-11-12', '3525616716', 'ROLG971112A14', 'calle deportiva #120 tirimacuaro', '1', '1');
+>>>>>>> Stashed changes
 
 
 
 -- -------------------------------------------------------
 -- tabla de datos de empresas ----------------------------
 -- -------------------------------------------------------------
+<<<<<<< Updated upstream
 
+=======
+drop table empresas;
+>>>>>>> Stashed changes
 create table empresas(
 id int (11) not null auto_increment,
 nombre varchar (40) not null,
@@ -174,7 +187,7 @@ primary key(id_pedrial));
 -- ----------------------------------------------------
 -- tabla personal--------------------------------------
 -- ----------------------------------------------------
-
+drop table personal;
 create table personal(
 id_personal int (11) not null auto_increment,
 nombre varchar (40)not null,
@@ -369,7 +382,11 @@ INSERT INTO `ayuntamiento`.`personal` (`id_personal`, `nombre`, `apellidoP`, `ap
 -- ----------------------------------------------------
 -- tabla de obras--------------------------------------
 -- ----------------------------------------------------
+<<<<<<< Updated upstream
 
+=======
+drop table obras;
+>>>>>>> Stashed changes
 create table obras(
 id_obra int (11)not null auto_increment,
 nombre varchar (40)not null,
@@ -378,6 +395,11 @@ fecha_final date,
 lugar varchar (40) not null,
 area varchar (60) not null,
 descripcion varchar(100),
+imagen1 varchar(40),
+imagen2 varchar(40),
+imagen3 varchar(40),
+imagen4 varchar(40),
+imagen5 varchar(40),
 primary key (id_obra));
 
 select * from obras;
@@ -385,7 +407,7 @@ select * from obras;
 -- ----------------------------------------------------
 -- tabla de estudiantes--------------------------------
 -- ----------------------------------------------------
-
+drop table estudiantes;
 create table estudiantes(
 id_estudiante int (11) not null auto_increment,
 nombre varchar (40) not null,
@@ -425,3 +447,7 @@ INSERT INTO `ayuntamiento`.`escuelas` (`id`, `nombre`, `direccion`, `telefono`, 
 
 
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes

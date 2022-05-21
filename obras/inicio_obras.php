@@ -68,6 +68,32 @@
        
     </header>
 
+    <section>
+       <?php
+               include '../conexion.php';
+               
+               $re=$mysql->query("select * from obras") or die(mysql_error());
+               while ($f=$re->fetch_array()){
+                   ?>
+                   <div class="obras">
+                       <center>
+                           <div class="contenedor-img">
+                               <img  style="border-radius: 40px;" class="obras-imagen" src="../img_obras/<?php echo $f['imagen'];?>"><br>
+                               <?php echo ($f['vacante']>0) ? '' : '<p class="text-img">Agotado</p>';?>
+                           </div>
+                           <span><?php echo $f['nombre'];?></span><br>
+                           <span>Fecha de publicacion: <?php echo $f['fecha_publi'];?></span><br>
+                           <?php echo ($f['vacante']>0) ? 'vacante: '.$f['vacante'] : 'sin vacantes'; ?><br>
+                           <a href="./detalles_trabajo.php?id=<?php echo $f['id']; ?>&token=<?php echo
+                           hash_hmac('sha1', $f['id'], KEY_TOKEN); ?>" class="btn 
+                           btn-primary"> ver detalles</a>
+
+               </center>
+               </div>
+               <?php
+               } 
+               ?>
+        </section> 
                     
 </body>
 </html>

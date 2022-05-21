@@ -15,7 +15,7 @@ $re=$mysql->query("select * from usuario where Usuario='".$_POST['Usuario']."' A
 		header("Location: ../index.php");
 		}
 		if($tipo==2){
-			header("Location: ./administracion/inicio_admin.php");	
+			header("Location: ../administracion/inicio_admin.php");	
 		}
 		if($tipo==3){
 			header("Location: ../index.php");	

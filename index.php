@@ -14,7 +14,7 @@ include "./conexion.php";
     <header>
         <div class="header_superior">
             <div class="logo">
-            <img  src="./imagenes/logo.jpg" id="logo">
+                <img  src="./imagenes/logo.jpg" id="logo">
             </div>
             <div class="logo2">
                 <img src="./imagenes/logo2.jpeg" id="logo2">
@@ -48,7 +48,7 @@ include "./conexion.php";
                     </li>
                         <?php
 		                if(isset($_SESSION['Usuario'])){ ?>
-		            <li><a href="./login/cerrar.php"style="text-decoration:none">>cerrar Sesion</a></li>
+		            <li><a href="./login/cerrar.php"style="text-decoration:none">cerrar Sesion</a></li>
 		                <?php
 		                } else { 
 		                ?>
