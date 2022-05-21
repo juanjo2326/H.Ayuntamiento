@@ -1,13 +1,13 @@
 <?php
 session_start();
-include "./conexion.php";
+include "../conexion.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>H Ayuntamiento 2021-2024</title>
-    <link rel="stylesheet" type="text/css" href="../css/estilosinicio.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
 </head>
 <body>
     <header>
@@ -47,7 +47,7 @@ include "./conexion.php";
         </div>
         <br>
         
-    </header>   
+    </header>  
 
 </body>
 

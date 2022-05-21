@@ -82,9 +82,10 @@
                                <?php echo ($f['vacante']>0) ? '' : '<p class="text-img">Agotado</p>';?>
                            </div>
                            <span><?php echo $f['nombre'];?></span><br>
-                           <span>Fecha de publicacion: <?php echo $f['fecha_publi'];?></span><br>
-                           <?php echo ($f['vacante']>0) ? 'vacante: '.$f['vacante'] : 'sin vacantes'; ?><br>
-                           <a href="./detalles_trabajo.php?id=<?php echo $f['id']; ?>&token=<?php echo
+                           <span>Fecha de Inicio: <?php echo $f['fecha_inicio'];?></span><br>
+                           <span>Fecha de Inicio: <?php echo $f['lugar'];?></span><br>
+                           <?php echo ($f['lugar']>0) ? 'vacante: '.$f['vacante'] : 'sin vacantes'; ?><br>
+                           <a href="./detalles_obra.php?id=<?php echo $f['id']; ?>&token=<?php echo
                            hash_hmac('sha1', $f['id'], KEY_TOKEN); ?>" class="btn 
                            btn-primary"> ver detalles</a>
 
@@ -94,6 +95,6 @@
                } 
                ?>
         </section> 
-                    
+    
 </body>
 </html>

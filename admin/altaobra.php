@@ -2,8 +2,7 @@
 include "../conexion.php";
 
 if(!isset($_POST['nombre']) && !isset($_POST['fecha_inicio']) && !isset($_POST['fecha_final']) && !isset($_POST['lugar']) 
-  && !isset($_POST['area']) && !isset($_POST['descripcion']) && !isset($_POST['imagen'])) && !isset($_POST['imagen2'])
-  && !isset($_POST['imagen3']) && !isset($_POST['imagen4']) && !isset($_POST['imagen5']))
+	 && !isset($_POST['area']) && !isset($_POST['descripcion']))
   {
       header("Location: agregarobra.php");
   } else{
@@ -30,7 +29,7 @@ if(!isset($_POST['nombre']) && !isset($_POST['fecha_inicio']) && !isset($_POST['
                       echo $_FILES["file"]["name"] . "Ya extiste.";
                   }else{
                       move_uploaded_file($_FILES["file"]["tmp_name"],
-                      "../img_obras/" .$random.'_'.$_FILES["file"]["name"]);
+                      "../fotostrabajadores/" .$random.'_'.$_FILES["file"]["name"]);
                       echo "Archivo guardado "."../img_obras/" .$random.'_'.$_FILES["file"]["name"];
                       $nombre=$_POST['nombre'];
                       $fecha_inicio=$_POST['fecha_inicio'];
@@ -38,24 +37,14 @@ if(!isset($_POST['nombre']) && !isset($_POST['fecha_inicio']) && !isset($_POST['
                       $lugar=$_POST['lugar'];
                       $area=$_POST['area'];
                       $descripcion=$_POST['descripcion'];
-                      $imagen1=$_POST['imagen1'];
-					  $imagen2=$_POST['imagen2'];
-					  $imagen3=$_POST['imagen3'];
-					  $imagen4=$_POST['imagen4'];
-					  $imagen5=$_POST['imagen5'];
-					  
-                     $Sql="insert into obras (nombre, fecha_inicio, fecha_final, lugar, area, descripcion, imagen1, imagen2, imagen3, imagen4, imagen5) values(
+                     $Sql="insert into obras (nombre, fecha_inicio, fecha_final, lugar, area, descripcion, imagen) values(
                          '".$nombre."',
                          '".$fecha_inicio."',
                          '".$fecha_final."',
                          '".$lugar."',
                          '".$area."',
                          '".$descripcion."',
-                         '".$imagen1."',
-                         '".$imagen2."',
-                         '".$imagen3."',
-						 '".$imagen4."',
-						 '".$imagen5."')";
+                         '".$imagen."')";
 
                          $mysql->query($sql);
                          header("Location: agregarobra.php");

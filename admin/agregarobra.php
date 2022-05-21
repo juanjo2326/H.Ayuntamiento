@@ -62,14 +62,14 @@ include "../conexion.php";
 			<div class="field-container">
 				<p>Nombre</p>
 				<i class="fa fa-folder fa-lg" aria-hidden="true"></i>
-				<input type="text" id="nombre" name="nombre" class="field" placeholder="Obra de reparacion..."> <br/>
+				<input type="text" id="nombre" name="nombre" class="field" placeholder="Obra de reparacion..." required> <br/>
 			</div><br>
 
 			<div class="columns">
 				<div class="field-container">
 					<p>Fecha De Inicio</p>
 					<i class="fa fa-solid fa-calendar fa-lg"></i>
-					<input type="date" id="fecha_inicio" name="fecha_inicio" class="field" placeholder=""> <br/>
+					<input type="date" id="fecha_inicio" name="fecha_inicio" class="field" placeholder="" required> <br/>
 				</div>
 
 				<div class="field-container">
@@ -83,13 +83,13 @@ include "../conexion.php";
 				<div class="field-container">
 					<p>Lugar</p>
 					<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
-					<input type="text" id="lugar" name="lugar" class="field" placeholder="Penjamillo"> <br/>
+					<input type="text" id="lugar" name="lugar" class="field" placeholder="Penjamillo" required> <br/>
 				</div>
 
 				<div class="field-container">
 					<p>Area</p>
 					<i class="fa fa-group fa-lg" aria-hidden="true"></i>
-					<input type="text" id="area" name="area" class="field" placeholder="Obras Publicas"> <br/>
+					<input type="text" id="area" name="area" class="field" placeholder="Obras Publicas" required> <br/>
 				</div>
 			</div><br>
 
@@ -101,37 +101,9 @@ include "../conexion.php";
 				</div>
 
 				<div class="field-container">
-					<p>Imagen 1</p>
+					<p>Imagen</p>
 					<i class="fa fa-image fa-lg" aria-hidden="true"></i>
-					<input type="file" id="imagen" name="imagen" class="subir"  placeholder=""> <br/>
-				</div>
-			</div><br>
-
-			<div class="columns">
-				<div class="field-container">
-					<p>Imagen 2</p>
-					<i class="fa fa-image fa-lg" aria-hidden="true"></i>
-					<input type="file" id="imagen2" name="imagen2" class="subir"  placeholder=""> <br/>
-				</div>
-
-				<div class="field-container">
-					<p>Imagen 3</p>
-					<i class="fa fa-image fa-lg" aria-hidden="true"></i>
-					<input type="file" id="imagen3" name="imagen3" class="subir"  placeholder=""> <br/>
-				</div>
-			</div><br><br>
-
-			<div class="columns">
-				<div class="field-container">
-					<p>Imagen 4</p>
-					<i class="fa fa-image fa-lg" aria-hidden="true"></i>
-					<input type="file" id="imagen4" name="imagen4" class="subir"  placeholder=""> <br/>
-				</div>
-
-				<div class="field-container">
-					<p>Imagen 5</p>
-					<i class="fa fa-image fa-lg" aria-hidden="true"></i>
-					<input type="file" id="imagen5" name="imagen5" class="subir"  placeholder=""> <br/>
+					<input type="file" id="imagen" name="imagen" class="subir"  placeholder="" required> <br/>
 				</div>
 			</div><br><br>
 
