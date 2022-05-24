@@ -48,16 +48,16 @@
                     <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="../obras/inicio_obras.php"style="text-decoration:none">Obras realizadas</a></li>
                     <li><a href="../pedrial/inicio_pedrial.php"style="text-decoration:none">Documento predial</a></li>
-                    <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
+                    <li><a href="../construccion/construccion.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="../estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
                         <ul class="submenu">
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda a problemas personales</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda adictos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">contactanos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Emergencias</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Quejas o sugerencias</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Ayuda comunitaria</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Ayuda a problemas personales</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Ayuda adictos</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">contactanos</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Emergencias</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Quejas o sugerencias</a></li>
                         </ul> 
                         </li>
                         <?php
@@ -99,7 +99,7 @@
     cursor: pointer;"></a><br><br>
     
     <p><h2>En el H Ayuntamiento, queremos mejorar el pueblo para las personas que no <br>
-       encuentran trabajo. En nuestro apartado de buscar trabajo tendras las opciones<br>
+       encuentran empleo. En nuestro apartado de buscar trabajo tendras las opciones<br>
        de ver las empresas o negocios que estan en el municipio de Penjamillo de Degollado.<br>
        con la ayuda que se tendra se vera la informacion para que ellos te puedan buscar</br>
        asi quedan en contacto con el administrador del contacto  </h2> </p>
@@ -139,7 +139,7 @@
                </div>
                <?php
                } 
-               ?>
+               ?><br><br><br>
                           <div class="footer" style="background: none repeat scroll 0 0 rgb(186,25,201);
     color: white;
     padding: 20px 0 20px;

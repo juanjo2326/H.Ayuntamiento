@@ -29,16 +29,16 @@
                     <li><a href="../trabajadores/inicio_trabajo.php"style="text-decoration:none">Buscas Trabajo</a></li>
                     <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="../obras/inicio_obras.php"style="text-decoration:none">Obras realizadas</a></li>
-                    <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
+                    <li><a href="../construccion/construccion.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="../estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
                         <ul class="submenu">
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda a problemas personales</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda adictos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">contactanos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Emergencias</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Quejas o sugerencias</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Ayuda comunitaria</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Ayuda a problemas personales</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Ayuda adictos</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">contactanos</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Emergencias</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Quejas o sugerencias</a></li>
                         </ul> 
                     </li>
                         <?php

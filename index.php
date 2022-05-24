@@ -34,16 +34,16 @@ include "./conexion.php";
                     <li><a href="rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="./obras/inicio_obras.php"style="text-decoration:none">Obras realizadas</a></li>
                     <li><a href="./pedrial/inicio_pedrial.php"style="text-decoration:none">DOCUMENTO PREDIAL</a></li>
-                    <li><a href="./personal/personal.php"style="text-decoration:none">Personal</a></li>
+                    <li><a href="./construccion/construccion.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="./estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
                         <ul class="submenu">
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda a problemas personales</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda adictos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">contactanos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Emergencias</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Quejas o sugerencias</a></li>
+                        <li><a href="./construccion/construccion.php" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
+                            <li><a href="./construccion/construccion.php" href○="#"style="text-decoration:none">Ayuda a problemas personales</a></li>
+                            <li><a href="./construccion/construccion.php" href○="#"style="text-decoration:none">Ayuda adictos</a></li>
+                            <li><a href="./construccion/construccion.php" href○="#"style="text-decoration:none">contactanos</a></li>
+                            <li><a href="./construccion/construccion.php" href○="#"style="text-decoration:none">Emergencias</a></li>
+                            <li><a href="./construccion/construccion.php" href○="#"style="text-decoration:none">Quejas o sugerencias</a></li>
                         </ul> 
                     </li>
                         <?php
@@ -96,7 +96,7 @@ include "./conexion.php";
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 51px;
-    padding: 20px 0px;">
+    padding: 0px 0px;">
                <div class="col-md-3">
                    <img  width="100px;" src="./imagenes/logo.jpg">
                    <img width="100px;" src="./imagenes/logo2.jpeg">
@@ -124,7 +124,10 @@ include "./conexion.php";
                            </a>
                        </li>
                    </ul>
+                   
+                   
                </div>
+               
                <div class="col-md-5">
                    <div style="text-align: center" class="footer-about-us">
                    <h2>
@@ -134,6 +137,7 @@ include "./conexion.php";
                    <P>Penjamillo, Michoacán. México.</P>
                 </div>
                </div>
+               
               <div class="col-md-4">
                   <div class="footer-newslatter">
                       <h4>
@@ -176,9 +180,11 @@ include "./conexion.php";
                           </li>
                       </ul>
                   </div>
+                  
               </div>
 
            </div>
+           
  
             
         </p>

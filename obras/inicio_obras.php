@@ -35,15 +35,15 @@
                     <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     
                     <li><a href="../pedrial/inicio_pedrial.php"style="text-decoration:none">Documento predial</a></li>
-                    <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
+                    <li><a href="../construccion/construccion.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
                         <ul class="submenu">
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda a problemas personales</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda adictos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">contactanos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Emergencias</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Quejas o sugerencias</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Ayuda comunitaria</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Ayuda a problemas personales</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Ayuda adictos</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">contactanos</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Emergencias</a></li>
+                            <li><a href="" href○="../construccion/construccion.php"style="text-decoration:none">Quejas o sugerencias</a></li>
                         </ul> 
                         </li>
                         <?php
@@ -70,6 +70,7 @@
 
     <section>
        <?php
+               require '../trabajadores/config.php'; 
                include '../conexion.php';
                
                $re=$mysql->query("select * from obras") or die(mysql_error());
@@ -79,14 +80,13 @@
                        <center>
                            <div class="contenedor-img">
                                <img  style="border-radius: 40px;" class="obras-imagen" src="../img_obras/<?php echo $f['imagen'];?>"><br>
-                               <?php echo ($f['vacante']>0) ? '' : '<p class="text-img">Agotado</p>';?>
+                               
                            </div>
                            <span><?php echo $f['nombre'];?></span><br>
                            <span>Fecha de Inicio: <?php echo $f['fecha_inicio'];?></span><br>
                            <span>Fecha de Inicio: <?php echo $f['lugar'];?></span><br>
-                           <?php echo ($f['lugar']>0) ? 'vacante: '.$f['vacante'] : 'sin vacantes'; ?><br>
-                           <a href="./detalles_obra.php?id=<?php echo $f['id']; ?>&token=<?php echo
-                           hash_hmac('sha1', $f['id'], KEY_TOKEN); ?>" class="btn 
+                           <a href="./detalles_obra.php?id_obra=<?php echo $f['id_obra']; ?>&token=<?php echo
+                           hash_hmac('sha1', $f['id_obra'], KEY_TOKEN); ?>" class="btn 
                            btn-primary"> ver detalles</a>
 
                </center>

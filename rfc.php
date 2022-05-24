@@ -42,16 +42,16 @@
                     <li><a href="./trabajadores/inicio_trabajo.php"style="text-decoration:none">Buscas Trabajo</a></li>
                     <li><a href="./obras/inicio_obras.php"style="text-decoration:none">Obras realizadas</a></li>
                     <li><a href="./pedrial/inicio_pedrial.php"style="text-decoration:none">DOCUMENTO PreDIAL</a></li>
-                    <li><a href="./personal/personal.php"style="text-decoration:none">Personal</a></li>
+                    <li><a href="./construccion/construccion.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="./estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
                         <ul class="submenu">
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda a problemas personales</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda adictos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">contactanos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Emergencias</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Quejas o sugerencias</a></li>
+                        <li><a href="./construccion/construccion.php" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
+                            <li><a href="./construccion/construccion.php" href○="#"style="text-decoration:none">Ayuda a problemas personales</a></li>
+                            <li><a href="./construccion/construccion.php" href○="#"style="text-decoration:none">Ayuda adictos</a></li>
+                            <li><a href="./construccion/construccion.php" href○="#"style="text-decoration:none">contactanos</a></li>
+                            <li><a href="./construccion/construccion.php" href○="#"style="text-decoration:none">Emergencias</a></li>
+                            <li><a href="./construccion/construccion.php" href○="#"style="text-decoration:none">Quejas o sugerencias</a></li>
                         </ul> 
                     </li>
                         <?php
@@ -77,14 +77,22 @@
     <br>
    <section><center>
    <p>
-    <img src="./imagenes/cita.png" width="400" id="sat"><br>
-        <p><h2> Si no tienes RFC te recordamos que es obligarotio tenerlo.</h2><br>
+    <img src="./imagenes/cita.png" width="400" id="sat" style="border-radius: 25px;"><br>
+        <p><h2 style="border-radius: 20px;
+    margin: 10px 15px;
+    display: inline-flex;
+    background: silver;
+    padding: 10px;"> Si no tienes RFC te recordamos que es obligarotio tenerlo.</h2><br>
            <h2>¿Para qué sirve?</h2><br>
            Además de servir para realizar diversos trámites referentes al pago de impuestos y obligaciones fiscales,<br>
            se necesita para poder acceder a diversos productos financieros como cuentas bancarias, tarjetas de crédito; programas de seguridad social <br>
            e incluso para participar en AFORES (Administradoras de Fondos para el Retiro) o usar el Fondo Nacional <br> 
            de la Vivienda para Trabajadores (INFONAVIT). <br><br>
-           <h3>Si no tienes aun tú RFC te damos los datos y el lugar para hacer cita en las oficinas del SAT.</h3></p><BR><br>
+           <h3 style="border-radius: 20px;
+    margin: 10px 15px;
+    display: inline-flex;
+    background: silver;
+    padding: 10px;">Si no tienes aun tú RFC te damos los datos y el lugar para hacer cita en las oficinas del SAT.</h3></p><BR><br>
            <h1>LISTADO DE REQUISITOS PARA LA ELAVORACIÓN DE LA CITA EN LA PLATAFORMA SAT</h1>
            <ul class="consultar">
                <li>1.-Inscripción al padrón de contribuyentes Personas Físicas</li>
@@ -100,8 +108,13 @@
                <li>11.-entidad federativa</li>
                <li>12.-Seleccionar el modulo</li>
                <li>13.-Te mandaran correo con la informacion y el dia </li><br>
-               <li><h2>NOTA</h2> deberas imprimir el documento que te mande al correo electronico, 
-                   te daran la lista de los docuentos que deberas llevar
+               <li><h2 >NOTA</h2 > <br>
+                    <h3 style="border-radius: 20px;
+    margin: 10px 15px;
+    display: inline-flex;
+    background: silver;
+    padding: 10px;">deberas imprimir el documento que te manda al correo electronico, 
+                    te daran la lista de los docuentos que deberas llevar<h3>
                </li>
            </ul><br>
            <center><a class="botons" href="https://citas.sat.gob.mx/"> <input type="button" value="CITAS" style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
@@ -115,12 +128,16 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;"></a></center><br><br>
-           <img src="./imagenes/sat.PNG" width="200" id="sat">
-           <h3> para consultar tú RFC es obligatorio mandarte <br>
+           <img src="./imagenes/sat.PNG" width="200" id="sat"><br>
+           <h3 style="border-radius: 20px;
+    margin: 10px 15px;
+    display: inline-flex;
+    background: silver;
+    padding: 10px;"> para consultar tú RFC es obligatorio mandarte <br>
            a la parte del SAT donde se deben de colocar los caracteres <br>
            que solicita. A continuación se muestra el listado que se <br>
            necesita para consultar tú RFC.</h3>
-           <h1>LISTADO DE REQUISITOS PARA LA CONSULTAR DEL RFC</h1>
+           <h1>LISTADO DE REQUISITOS PARA LA CONSULTAR DEL RFC</h1><br>
            <ul class="consultar">
                <li>1.-CURP</li>
                <li>2.-AÑO DE INSCRIPCION</li>

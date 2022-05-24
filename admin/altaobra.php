@@ -1,8 +1,8 @@
 <?php
-include "../conexion.php";
+include ("../conexion.php");
 
 if(!isset($_POST['nombre']) && !isset($_POST['fecha_inicio']) && !isset($_POST['fecha_final']) && !isset($_POST['lugar']) 
-	 && !isset($_POST['area']) && !isset($_POST['descripcion']))
+   && !isset($_POST['area']) && !isset($_POST['descripcion']))
   {
       header("Location: agregarobra.php");
   } else{
@@ -25,12 +25,12 @@ if(!isset($_POST['nombre']) && !isset($_POST['fecha_inicio']) && !isset($_POST['
                   //se sube la imagen
 
                   $imagen= $random.'_'.$_FILES["file"]["name"];
-                  if(file_exists("../img_obras/".$random.'_'.$_FILES["file"]["name"])){
+                  if(file_exists("../fotosobras/".$random.'_'.$_FILES["file"]["name"])){
                       echo $_FILES["file"]["name"] . "Ya extiste.";
                   }else{
                       move_uploaded_file($_FILES["file"]["tmp_name"],
-                      "../fotostrabajadores/" .$random.'_'.$_FILES["file"]["name"]);
-                      echo "Archivo guardado "."../img_obras/" .$random.'_'.$_FILES["file"]["name"];
+                      "../fotosobras/" .$random.'_'.$_FILES["file"]["name"]);
+                      echo "Archivo guardado "."../fotosobras/" .$random.'_'.$_FILES["file"]["name"];
                       $nombre=$_POST['nombre'];
                       $fecha_inicio=$_POST['fecha_inicio'];
                       $fecha_final=$_POST['fecha_final'];

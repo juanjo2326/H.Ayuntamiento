@@ -36,15 +36,15 @@
                     <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="#"style="text-decoration:none">Obras realizadas</a></li>
                     <li><a href="../pedrial/inicio_pedrial.php"style="text-decoration:none">Documento predial</a></li>
-                    <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
+                    <li><a href="../construccion/construccion.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
                         <ul class="submenu">
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda a problemas personales</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda adictos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">contactanos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Emergencias</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Quejas o sugerencias</a></li>
+                            <li><a href="../construccion/construccion.php" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
+                            <li><a href="../construccion/construccion.php" href○="#"style="text-decoration:none">Ayuda a problemas personales</a></li>
+                            <li><a href="../construccion/construccion.php" href○="#"style="text-decoration:none">Ayuda adictos</a></li>
+                            <li><a href="../construccion/construccion.php" href○="#"style="text-decoration:none">contactanos</a></li>
+                            <li><a href="../construccion/construccion.php" href○="#"style="text-decoration:none">Emergencias</a></li>
+                            <li><a href="../construccion/construccion.php" href○="#"style="text-decoration:none">Quejas o sugerencias</a></li>
                         </ul> 
                         </li>
                         <?php
@@ -71,11 +71,13 @@
     <br><br><br><br><br>
     <center>
     
-    <p>En el H Ayuntamiento, queremos mejorar el pueblo para las personas que no <br>
-       encuentran trabajo. En nuestro apartado de buscar trabajo tendras las opciones<br>
-       de ver las empresas o negocios que estan en el municipio de Penjamillo de Degollado.<br>
-       con la ayuda que se tendra se vera la informacion para que ellos te puedan buscar</br>
-       asi quedan en contacto con el administrador del contacto   </p>
+    <p><h2  style="border-radius: 20px;
+    margin: 10px 15px;
+    display: inline-flex;
+    background: none repeat scroll 0 0 rgb(186, 25,201);
+    padding: 10px;">En el H Ayuntamiento, queremos mejorar el pueblo para las personas que no <br>
+      Para ello hemos creado una opcion con las escuelas y preparatorias <br>
+      para los estudiantes, y vean las opciones y los detalles de las escuelas </h2><br> </p>
        </div> </center> <br><br>
     <section>
        <?php
@@ -86,18 +88,18 @@
                while ($f=$re->fetch_array()){
                    ?>
 
-                   <div class="escuelas"style="width: 693px;
-    margin: 9px 191px;
+                   <div class="escuelas"style="width: 800px;
+    margin: 30px 18px;
     display: inline-flex;
-    height: 415px;
+    height: 440px;
     justify-content: center;
     background: silver;
-    border-radius: 35px;
-    padding: 34px;">
+    border-radius: 75px;
+    padding: 34px;;">
     
                        <center>
                            <div class="contenedor-img">
-                               <img style="border-radius: 40px; width: 500px"class="escuelas-imagen" src="../img_escu/<?php echo $f['imagen1'];?>"> <br>
+                               <img style="border-radius: 40px; width: 340px"class="escuelas-imagen" src="../img_escu/<?php echo $f['imagen1'];?>"> <br>
                            </div>
                            <span><h3>Nombre de la institucion:</h3><?php echo $f['nombre'];?></span><br>
                            <span><h3>Direccion:</h3> <?php echo $f['direccion'];?></span><br>
