@@ -60,7 +60,7 @@ include "../conexion.php";
           <!-- </fieldset>-->
          <!--<fieldset>-->
               Fecha <br>
-              <input class="controls" type="text" placeholder="Fecha del ultimo pago" name="fecha" required> 
+              <input class="controls" type="date" placeholder="Fecha del ultimo pago" name="fecha" required> 
           <!-- </fieldset>-->
          <!--<fieldset>-->
               Pago <br>

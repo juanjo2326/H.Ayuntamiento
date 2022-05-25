@@ -30,7 +30,7 @@ include "./conexion.php";
             <nav>
                 <ul>
                     <li><a href="#!">inicio</a></li>
-                    <li><a href="./trabajadores/inicio_trabajo.php"style="text-decoration:none">Buscas Trabajo</a></li>
+                    <li><a href="./trabajadores/inicio_trabajo.php"style="text-decoration:none">Buscas empleo</a></li>
                     <li><a href="rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="./obras/inicio_obras.php"style="text-decoration:none">Obras realizadas</a></li>
                     <li><a href="./pedrial/inicio_pedrial.php"style="text-decoration:none">DOCUMENTO PREDIAL</a></li>

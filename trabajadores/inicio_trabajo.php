@@ -84,7 +84,11 @@
     <center>
     <div>
           
-        <h2>Cuentas con una empresa y ocupas trabajadores registra aqui</h2><br><br>
+        <h2 style="border-radius: 20px;
+    margin: 10px 15px;
+    display: inline-flex;
+    background: none repeat scroll 0 0 rgb(186, 25,201);
+    padding: 10px;">Cuentas con una empresa y ocupas trabajadores registra aqui</h2><br><br>
     <a href="./agregar_trabajo.php" class="btn" style="text-decoration:none;"><input type="button" value="AGREGAR EMPLEO" 
     style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
     color: white;
