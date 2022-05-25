@@ -89,14 +89,14 @@ include "./conexion.php";
             
            <div class="footer" style="background: none repeat scroll 0 0 rgb(186,25,201);
     color: white;
-    padding: 20px 0 20px;
-    margin-top: 19px;
-    font-size: 19px;
+    margin-top: 50px;
+    font-size: 20px;
     width: 1900px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 51px;
-    padding: 0px 0px;">
+    grid-gap: 43px;
+    padding: 1px 0px;
+">
                <div class="col-md-3">
                    <img  width="100px;" src="./imagenes/logo.jpg">
                    <img width="100px;" src="./imagenes/logo2.jpeg">
