@@ -2,6 +2,7 @@
 select * from obras;
 select * from pago_pedrial;
 
+
 select * from empresas;
 
 select * from trabajadores;
@@ -231,3 +232,16 @@ INSERT INTO `ayuntamiento`.`escuelas` (`id`, `nombre`, `direccion`, `telefono`, 
 INSERT INTO `ayuntamiento`.`escuelas` (`id`, `nombre`, `direccion`, `telefono`, `direcctor`, `clave`, `horarios`, `tipo`, `comentarios`, `imagen1`) VALUES ('5', 'CAM penjamillo', 'av Los Encinos #38 Penjamillo Michoacan ', '3595241268', 'Guadalupe Orozco Avila', '16250capm08', '9 am a 12 pm', 'Escuela para niños Especiales', 'Es una escuela para niños con problemas', 'cam.jpg');
 INSERT INTO `ayuntamiento`.`escuelas` (`id`, `nombre`, `direccion`, `telefono`, `direcctor`, `clave`, `horarios`, `tipo`, `comentarios`, `imagen1`) VALUES ('6', 'CECyTE', 'av Petazicuaro #244 Penjamillo Michoacan', '3595244032', 'Jose Espinoza Arevalo', '16ETCOOO1G', '7 am a 5 pm', 'Preparatoria', 'Preparatoria para adolecentes con mentalidad de sobre salir', 'cecytem.jpg');
 INSERT INTO `ayuntamiento`.`escuelas` (`id`, `nombre`, `direccion`, `telefono`, `direcctor`, `clave`, `horarios`, `tipo`, `comentarios`, `imagen1`) VALUES ('7', 'Secundaria Tecnica', 'av Michoacan Zinaparo-Villa morelos #180', '3592460963', 'Jose Antonio Mendez Rios', '1053CNTE091', '7 am a 3 pm', 'Secundaria', 'Secundaria Tecnica con diferentes modulos', 'est63.jpg');
+
+create table trabajadores (
+id_trabajador int (11) not null auto_increment,
+nombre varchar (40) not null,
+apellidoPa varchar (20) not null,
+apellidoMa varchar (20) not null,
+fecha_nacimiento date not null, -- primero se coloca el año-mes-dia
+telefono varchar (10)not null,
+rfc varchar (13)not null,
+direccion varchar (100) not null,
+imagen varchar (40) not null,
+tipo smallint(2)not null,
+primary key (id_trabajador));

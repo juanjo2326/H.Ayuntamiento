@@ -82,17 +82,18 @@
         ?>
 
          <center>
-             <div class="container" style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    background: rgb(186,25,201);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;">
+             <div class="container" 
+             style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    background: rgb(186,25,201);
+                    border: none;
+                    border-radius: 8px;
+                    cursor: pointer;">
              <img class="imgen_presas" style="border-radius: 20px;" src="../img_presas/<?php echo $f['imagen'];?>"><br>
              <span><?php echo $f['nombre'];?></span><br>
              <span><h3>Horario de entrada:</h3> <?php echo $f['horario_entrada'];?></span><br>

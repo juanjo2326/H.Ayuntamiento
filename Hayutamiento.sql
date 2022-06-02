@@ -29,33 +29,6 @@ nombre varchar (40)default null,
 habitantes int (11)not null,
 primary key (idranch));
 
-
-
-
-
--- -------------------------------------------------------------
--- tabla de datos para trabajadores ----------------------------
--- -------------------------------------------------------------
-
-create table trabajadores (
-id_trabajador int (11) not null auto_increment,
-nombre varchar (40) not null,
-apellidoPa varchar (20) not null,
-apellidoMa varchar (20) not null,
-fecha_nacimiento date not null, -- primero se coloca el año-mes-dia
-telefono varchar (10)not null,
-rfc varchar (13)not null,
-direccion varchar (100) not null,
-imagen varchar (40) not null,
-tipo smallint(2)not null,
-primary key (id_trabajador));
-
-
-
-
-
-
-
 -- -------------------------------------------------------
 -- tabla de datos de empresas ----------------------------
 -- -------------------------------------------------------------
@@ -82,13 +55,12 @@ primary key(id)
 -- ----------------------------------------------------
 -- tabla pago pedrial----------------------------------
 -- ----------------------------------------------------
-drop table pago_pedrial;
 create table pago_pedrial(
 id_pedrial int (11) not null auto_increment,
 tipo_comprovante varchar (10) not null,
 folio varchar (10) not null,
 fecha date not null,
-pago smallint(2) not null,
+pago varchar(40) not null,
 forma_pago varchar (25) not null,
 contribuyente varchar (40) not null,
 cuenta_pedrial varchar (20) not null,
@@ -99,7 +71,9 @@ concepto varchar (30) not null,
 domicilio varchar (45) not null,
 ubicacion_predio varchar (100) not null,
 periodo_pago varchar (40) not null,
-clave smallint (6) not null,
+clave varchar (10) not null,
+descripcion varchar(50) not null,
+importe varchar(8) not null,
 telefono varchar (10) not null,
 primary key(id_pedrial));
 
@@ -118,7 +92,9 @@ telefono_area varchar (10),
 area varchar (60) not null,
 primary key(id_personal));
 
-
+-- ----------------------------------------------------
+-- tabla de obras--------------------------------
+-- ----------------------------------------------------
 
 
 create table obras(
@@ -171,9 +147,6 @@ carrera3 varchar (20),
 carrera4 varchar (20),
 primary key(id));
 
-
-
--- consultar uno en especifico
 
 
 

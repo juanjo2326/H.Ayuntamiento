@@ -103,7 +103,7 @@ include "../conexion.php";
 				<div class="field-container">
 					<p>Imagen</p>
 					<i class="fa fa-image fa-lg" aria-hidden="true"></i>
-					<input type="file" id="imagen" name="imagen" class="subir"  placeholder="" required> <br/>
+					<input class="subir" type="FILE" placeholder="Imagen" name="file"  required> <br/>
 				</div>
 			</div><br><br>
 

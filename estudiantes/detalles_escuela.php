@@ -58,7 +58,8 @@
 
     <section><br>
     <a href="./inicio_estudiantes.php" class="btn" style="text-decoration:none;"><input type="button" value="Regresar" 
-    style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 
+    0 17px 50px 0 rgb(0 0 0 / 19%);
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -82,26 +83,27 @@
         ?>
 
          <center>
-             <div class="container" style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    background: rgb(186,25,201);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;">
+             <div class="container" style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 
+             0 17px 50px 0 rgb(0 0 0 / 19%);
+             color: white;
+             padding: 15px 32px;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+             font-size: 16px;
+             background: rgb(186,25,201);
+             border: none;
+             border-radius: 8px;
+             cursor: pointer;">
              
              <span><?php echo $f['nombre'];?></span><br>
-             <span><h3>Direccion:</h3> <?php echo $f['direccion'];?></span><br>
-             <span><h3>Telefono: </h3><?php echo $f['telefono'];?></span><br>
-             <span><h3>Director:</h3> <?php echo $f['direcctor'];?></span><br>
-             <span><h3>Clave: </h3><?php echo $f['clave'];?></span><br>
-             <span><h3>Horarios:</h3> <?php echo $f['horarios'];?></span><br>
+             <span><h3>Direccion:</h3>           <?php echo $f['direccion'];?></span><br>
+             <span><h3>Telefono: </h3>           <?php echo $f['telefono'];?></span><br>
+             <span><h3>Director:</h3>            <?php echo $f['direcctor'];?></span><br>
+             <span><h3>Clave: </h3>              <?php echo $f['clave'];?></span><br>
+             <span><h3>Horarios:</h3>            <?php echo $f['horarios'];?></span><br>
              <span><h3>Tipo de institución:</h3> <?php echo $f['tipo'];?></span><br>
-             <span><h3>Comentarios:</h3> <?php echo $f['comentarios'];?></span><br>
+             <span><h3>Comentarios:</h3>         <?php echo $f['comentarios'];?></span><br>
              <img class="imgen_escue" style="border-radius: 20px;" src="../img_escu/<?php echo $f['imagen1'];?>"><br>
 
              

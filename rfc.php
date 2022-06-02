@@ -78,7 +78,7 @@
    <section><center>
    <p>
     <img src="./imagenes/cita.png" width="400" id="sat" style="border-radius: 25px;"><br>
-        <p><h2 style="border-radius: 20px;
+    <p><h2 style="border-radius: 20px;
     margin: 10px 15px;
     display: inline-flex;
     background: silver;
@@ -89,10 +89,12 @@
            e incluso para participar en AFORES (Administradoras de Fondos para el Retiro) o usar el Fondo Nacional <br> 
            de la Vivienda para Trabajadores (INFONAVIT). <br><br>
            <h3 style="border-radius: 20px;
-    margin: 10px 15px;
-    display: inline-flex;
-    background: silver;
-    padding: 10px;">Si no tienes aun tú RFC te damos los datos y el lugar para hacer cita en las oficinas del SAT.</h3></p><BR><br>
+                      margin: 10px 15px;
+                      display: inline-flex;
+                      background: silver;
+                     padding: 10px;">
+
+               Si no tienes aun tú RFC te damos los datos y el lugar para hacer cita en las oficinas del SAT.</h3></p><BR><br>
            <h1>LISTADO DE REQUISITOS PARA LA ELAVORACIÓN DE LA CITA EN LA PLATAFORMA SAT</h1>
            <ul class="consultar">
                <li>1.-Inscripción al padrón de contribuyentes Personas Físicas</li>
@@ -117,17 +119,18 @@
                     te daran la lista de los docuentos que deberas llevar<h3>
                </li>
            </ul><br>
-           <center><a class="botons" href="https://citas.sat.gob.mx/"> <input type="button" value="CITAS" style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    background: rgb(186,25,201);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;"></a></center><br><br>
+           <center><a class="botons" href="https://citas.sat.gob.mx/"> <input type="button" value="CITAS" 
+           style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+                  color: white;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                  background: rgb(186,25,201);
+                  border: none;
+                  border-radius: 8px;
+                  cursor: pointer;"></a></center><br><br>
            <img src="./imagenes/sat.PNG" width="200" id="sat"><br>
            <h3 style="border-radius: 20px;
     margin: 10px 15px;
@@ -146,18 +149,19 @@
                <li>5.-CODIGO POSTAL</li>
                <li>6.-ERES EMPLEADO</li>
                <li>7.-deberas ingresar el texto de la imagen</li><br>
-               <a  class="botons" href="https://www54.sat.gob.mx/curp/Consult"> <input type="button" value="CONSULTAR RFC " 
+               <a  class="botons" href="https://www54.sat.gob.mx/curp/Consult">
+                 <input type="button" value="CONSULTAR RFC " 
                style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    background: rgb(186,25,201);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;"></a><br>
+                      color: white;
+                      padding: 15px 32px;
+                      text-align: center;
+                      text-decoration: none;
+                      display: inline-block;
+                      font-size: 16px;
+                      background: rgb(186,25,201);
+                      border: none;
+                      border-radius: 8px;
+                      cursor: pointer;"></a><br>
                <br>
                <br>
                <br>

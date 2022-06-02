@@ -71,7 +71,9 @@ include "./conexion.php";
    
 
     <div id="info">
+        
         <p>
+        <h1>PENJAMILLO DE DEGOLLADO</h1><br>
             Penjamillo, proviene de "Penxamech", palabra de origen purépecha que significa "lugar de sabinos".<br><br>
             <img src="./imagenes/letras.jpg" id="letras"> <br><br>
             Se fundó por merced de tierras, concedida a los naturales por el virrey de Velasco en 1560. Durante esta época, 
@@ -91,7 +93,7 @@ include "./conexion.php";
     color: white;
     margin-top: 50px;
     font-size: 20px;
-    width: 1900px;
+    width: 2000px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 43px;
@@ -203,16 +205,22 @@ include "./conexion.php";
     </div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/H-Ayuntamiento-Penjamillo-2021-2024-107089381715143/" 
         data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" 
-        data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=360
-        &amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FH-Ayuntamiento-Penjamillo-2021-2024-107089381715143%2F&amp;locale=es_ES
+        data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;
+        container_width=360
+        &amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FH-Ayuntamiento-Penjamillo-2021-2024-107089381715143%2F&amp;
+        locale=es_ES
         &amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline">
-        <span style="vertical-align: bottom; width: 360px; height: 500px;"><iframe name="f20f6672644c8e" width="1000px" height="1000px" 
+        <span style="vertical-align: bottom; width: 360px; height: 500px;"><iframe name="f20f6672644c8e" width="1000px" 
+        height="1000px" 
         data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" 
         allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" 
         src="https://www.facebook.com/v3.2/plugins/page.php?adapt_container_width=true&amp;
-        app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df4429e1bc53748%26domain%
-        3Digobdigital.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Figobdigital.com%252Ff9791dd56711c8%26relation%3Dparent.parent
-        &amp;container_width=360&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FH-Ayuntamiento-Penjamillo-2021-2024-107089381715143%2F
+        app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df4429e1bc
+        53748%26domain%
+        3Digobdigital.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Figobdigital.com%252Ff9791dd56711c8%26relation%3Dparent.
+        parent
+        &amp;container_width=360&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FH-Ayuntamiento-Penjamillo-2021-2024-
+        107089381715143%2F
         &amp;locale=es_ES&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline" 
         style="border: none; visibility: visible; width: 340px; height: 500px;" class=""></iframe></span></div>
 

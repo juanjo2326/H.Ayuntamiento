@@ -11,6 +11,7 @@ include "../conexion.php";
     <title>Registrar Empleo</title>
     <link rel="stylesheet" type="text/css"href="../css/trabajo.css">
     <script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
+    
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- CSS only -->
 </head>
@@ -74,7 +75,8 @@ include "../conexion.php";
     <br>
     
     <a href="./inicio_trabajo.php" class="btn" style="text-decoration:none;"><input type="button" value="Regresar" 
-    style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 
+    0 17px 50px 0 rgb(0 0 0 / 19%);
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -90,39 +92,76 @@ include "../conexion.php";
     <!--mmmmmmmm-->
     <section class="form-register">
     <center><h1>Formulario de registro</h1></center>
-    <form action="../trabajos/altatrabajo.php" method = "post" enctype="multipart/form-data">
+    <form action="../trabajadores/altatrabajo.php" method = "post" enctype="multipart/form-data">
           <!--<fieldset>-->
+              <div class ="form-input">
               Nombre <br>
               <input class="controls" type="text" placeholder="Nombre de la empresa" name="nombre" required> 
+              <!--<p class="mensajeError"> error error</p>-->
+              </div>
           <!-- </fieldset>-->
           <!--<fieldset>-->
+          <div class ="form-input">
               Horario de entrada <br>
-              <input class="controls" type="time" placeholder="Horario de entrada" name="horario_entrada" required> 
+              <input class="controls" type="time" placeholder="Horario de entrada" name="horario_entrada" required>
+              <!--<p class="mensajeError"> error error</p> -->
+              </div>
           <!-- </fieldset>-->
          <!--<fieldset>-->
+         <div class ="form-input">
               Horario de salida <br>
               <input class="controls" type="time" placeholder="Horario de salida" name="horario_salida" required> 
+              <!--<p class="mensajeError"> error error</p>-->
+              </div>
           <!-- </fieldset>-->
+
          <!--<fieldset>-->
-              Requisitos <br>
-              <input class="controls" type="text" placeholder="Requisitos" name="requisitos" required> 
-          <!-- </fieldset>-->
-         <!--<fieldset>-->
+         <div class ="form-input">
               Fecha de publicacion <br>
               <input class="controls" type="date" placeholder="Fecha de publicacion" name="fecha_publi" required> 
+             <!-- <p class="mensajeError"> error error</p>-->
+              </div>
+        <!--<fieldset>-->
+         <div class ="form-input">
+              Requisitos <br>
+              <input class="controls" type="text" placeholder="Requisitos" name="requisitos" required> 
+             <!-- <p class="mensajeError"> error error</p>-->
+              </div>
+          <!-- </fieldset>-->
+                   <!--<fieldset>-->
+         <div class ="form-input">
+              Telefono <br>
+              <input class="controls" type="text" placeholder="telefono" name="telefono" required> 
+             <!-- <p class="mensajeError"> error error</p>-->
+              </div>
+          <!-- </fieldset>-->
           <!-- </fieldset>-->
           <!--<fieldset>-->
+          <div class ="form-input">
               Vacantes <br>
-              <input class="controls" type="text" placeholder="vacantes" name="vacantes" required> 
+              <input class="controls" type="text" placeholder="vacante" name="vacante" required> 
+              <!--<p class="mensajeError"> error error</p>-->
+              </div>
+          <!-- </fieldset>-->
+                   <!--<fieldset>-->
+         <div class ="form-input">
+              Direccion <br>
+              <input class="controls" type="text" placeholder="Direccion" name="direccion" required> 
+             <!-- <p class="mensajeError"> error error</p>-->
+              </div>
           <!-- </fieldset>-->
           <!--<fieldset>-->
+          <div class ="form-input">
               Imagen <br>
-              <input class="subir" type="file" placeholder="Imagen" name="file" required> 
+              <input class="subir" type="FILE" placeholder="Imagen" name="file" required> 
+              <!--<p class="mensajeError"> error error</p>-->
+              </div>
           <!-- </fieldset>-->
           <input class="botons" type="submit" name="accion" value="enviar" class="Reagistrar">
-
+          <!--<p class="mensajeCorrecto"> Listo</p>-->
 
     </form>
+    <script src="../js/scripts.js"></script>
 </section><br>
 <br>
 <div class="footer" style="background: none repeat scroll 0 0 rgb(186,25,201);

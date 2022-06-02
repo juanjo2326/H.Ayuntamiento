@@ -125,17 +125,17 @@
                            <span><?php echo $f['nombre'];?></span><br>
                            <span>Fecha de publicacion: <?php echo $f['fecha_publi'];?></span><br>
                            <?php echo ($f['vacante']>0) ? 'vacante: '.$f['vacante'] : 'sin vacantes'; ?><br>
-                           <a     style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    background: rgb(186,25,201);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;" href="./detalles_trabajo.php?id=<?php echo $f['id']; ?>&token=<?php echo
+                           <a style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+                                     color: white;
+                                     padding: 15px 32px;
+                                     text-align: center;
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     font-size: 16px;
+                                     background: rgb(186,25,201);
+                                     border: none;
+                                     border-radius: 8px;
+                                     cursor: pointer;" href="./detalles_trabajo.php?id=<?php echo $f['id']; ?>&token=<?php echo
                            hash_hmac('sha1', $f['id'], KEY_TOKEN); ?>" class="btn 
                            btn-primary"> ver detalles</a>
 

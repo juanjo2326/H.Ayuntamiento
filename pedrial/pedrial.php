@@ -42,7 +42,7 @@ include "../conexion.php";
     background: rgb(186,25,201);
     border: none;
     border-radius: 8px;
-    cursor: pointer;">
+    cursor: pointer;"></a>
 
 
     <center><img src="../imagenes/documento.PNG" width="200" id="logotrabajo"></center>
@@ -50,9 +50,11 @@ include "../conexion.php";
     <section class="form-register">
     <center><h1>Formulario de registro predial</h1></center>
     <form action="./alta_pedrial.php" method = "post" enctype="multipart/form-data">
+
           <!--<fieldset>-->
               Tipo de comprovante <br>
               <input class="controls" type="text" placeholder="Tipo del comprovante" name="tipo_comprovante" required> 
+            </div>
           <!-- </fieldset>-->
           <!--<fieldset>-->
               Folio <br>
@@ -82,6 +84,7 @@ include "../conexion.php";
               Valor <br>
               <input class="controls" type="text" placeholder="valor catastral" name="valor_catastral" required> 
           <!-- </fieldset>-->
+
             <!--<fieldset>-->
                 Tasa <br>
               <input class="controls" type="text" placeholder="Tipo de tasa" name="tasa" required> 
@@ -111,6 +114,14 @@ include "../conexion.php";
               <input class="controls" type="text" placeholder="Tipo de clave" name="clave" required> 
           <!-- </fieldset>-->
           <!--<fieldset>-->
+        <!--<fieldset>-->
+                Descripcion <br>
+              <input class="controls" type="text" placeholder="Descripcion" name="descripcion" required> 
+          <!-- </fieldset>-->
+          <!--<fieldset>-->
+                Importe <br>
+              <input class="controls" type="text" placeholder="Importe a pagar" name="importe" required> 
+          <!-- </fieldset>-->
                Telefono <br>
               <input class="controls" type="text" placeholder="Telefono personal" name="telefono" required> 
           <!-- </fieldset>-->
@@ -127,8 +138,8 @@ include "../conexion.php";
     font-size: 20px;
     width: 1900px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 51px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
     padding: 10px 0px;">
                <div class="col-md-3">
                    <img  width="100px;" src="../imagenes/logo.jpg">

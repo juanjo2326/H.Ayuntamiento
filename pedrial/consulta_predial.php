@@ -45,14 +45,15 @@ $telefono=0;
 $telefono=$_POST['telefono'];
 
 include "../conexion.php";
-
 $re=$mysql->query("select * from pago_pedrial where telefono=".$telefono) or die(mysql_error());
+if ($re->num_rows>0){
+
 while ($f=$re->fetch_array()){
     ?>
 
 <center>
     <table border: 2px; width="50%" style="border-radius: 5px;
-     width: 25%;
+     width: 40%;
    text-align: left;
    vertical-align: top;
    border: 3px solid #000;">
@@ -115,7 +116,7 @@ while ($f=$re->fetch_array()){
     border: 2px solid #000;
     border-collapse: collapse;
     padding: 0.3em;
-    caption-side: bottom;">fecha</th><th style="width: 50%;
+    caption-side: bottom;">Fecha</th><th style="width: 50%;
     text-align: center;
     vertical-align: top;
     border: 2px solid #000;
@@ -167,7 +168,7 @@ while ($f=$re->fetch_array()){
     border: 2px solid #000;
     border-collapse: collapse;
     padding: 0.3em;
-    caption-side: bottom;">cuenta predial</th><th style="width: 50%;
+    caption-side: bottom;">Cuenta predial</th><th style="width: 50%;
     text-align: center;
     vertical-align: top;
     border: 2px solid #000;
@@ -219,7 +220,7 @@ while ($f=$re->fetch_array()){
     border: 2px solid #000;
     border-collapse: collapse;
     padding: 0.3em;
-    caption-side: bottom;">concepto</th><th style="width: 50%;
+    caption-side: bottom;">Concepto</th><th style="width: 50%;
     text-align: center;
     vertical-align: top;
     border: 2px solid #000;
@@ -278,6 +279,32 @@ while ($f=$re->fetch_array()){
     border-collapse: collapse;
     padding: 0.3em;
     caption-side: bottom;"><?php echo $f['clave'];?></th></tr>
+                    <tr><th scope="col" style="width: 50%;
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;">Descripcion</th><th style="width: 50%;
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;"><?php echo $f['descripcion'];?></th></tr>
+                    <tr><th scope="col" style="width: 50%;
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;">Importe</th><th style="width: 50%;
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;"><?php echo $f['importe'];?></th></tr>
                 <tr><th scope="col" style="width: 50%;
     text-align: center;
     vertical-align: top;
@@ -304,13 +331,19 @@ while ($f=$re->fetch_array()){
     
  <?php
 }
+}else {
+    echo '<script type="text/javascript">
+    alert("NO HAY REGISTROS");
+    window.location.href="./inicio_pedrial.php";
+</script>';
+    }
 ?>
 <br>
     <p><h1 style="border-radius: 20px;
     margin: 10px 15px;
     display: inline-flex;
     background: silver;
-    padding: 10px;">¿Quieres descargar el Docuemnto?</h1>
+    padding: 10px;">¿Quieres descargar el Documento?</h1>
     <center><h2>Deberas colocar el mismo numero telefonico para verificar</h2>
             <h3  style="border-radius: 20px;
     margin: 10px 15px;

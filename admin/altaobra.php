@@ -1,42 +1,55 @@
 <?php
-include ("../conexion.php");
+include "../conexion.php";
 
-if(!isset($_POST['nombre']) && !isset($_POST['fecha_inicio']) && !isset($_POST['fecha_final']) && !isset($_POST['lugar']) 
-   && !isset($_POST['area']) && !isset($_POST['descripcion']))
+echo " hola 1";
+if(empty($_POST['nombre']) && empty($_POST['fecha_inicio']) && empty($_POST['fecha_final']) && empty($_POST['lugar']) 
+  && empty($_POST['area']) && empty($_POST['descripcion']))
   {
       header("Location: agregarobra.php");
-  } else{
-      $allowedExts = array("gif","jpeg","jpg","png");
+  } else{ echo "hola 2";
+      $allowedExts = array("jpeg","jpg","png","xbm","xpm","wbmp","tiff","psb","bmp");
       $temp = explode(" . ", $_FILES["file"]["name"]);
       $extension = end($temp);
       $imagen="";
       $random=rand(1,999999);
-      if ((($_FILES["file"]["type"] == "imagen/gif")
-          || ($_FILES["file"]["type"] == "imagen/jpeg")
-          || ($_FILES["file"]["type"] == "imagen/jpg")
-          || ($_FILES["file"]["type"] == "imagen/pjpeg")
-          || ($_FILES["file"]["type"] == "imagen/x-png")
-          || ($_FILES["file"]["type"] == "imagen/png"))){
+      echo "hola 3";
+      if (  
+          ($_FILES["file"]["type"] == "image/jpeg")
+          || ($_FILES["file"]["type"] == "image/jpg")
+          || ($_FILES["file"]["type"] == "image/png")
+          || ($_FILES["file"]["type"] == "image/xbm")
+          || ($_FILES["file"]["type"] == "image/xpm")
+          || ($_FILES["file"]["type"] == "image/wbmp")
+          || ($_FILES["file"]["type"] == "image/tiff")
+          || ($_FILES["file"]["type"] == "image/psb")
+          || ($_FILES["file"]["type"] == "image/bmp")
+          ){  echo "hola 4";
               //verificamos que sea una imagen
               if($_FILES["file"]["error"] > 0){
                   //verificamos que venga algo en el input file
                   echo "Error numerpo:" . $_FILES["file"]["error"] . "<br>";
-              }else{
+              }else{ echo "hola 5";
                   //se sube la imagen
 
                   $imagen= $random.'_'.$_FILES["file"]["name"];
-                  if(file_exists("../fotosobras/".$random.'_'.$_FILES["file"]["name"])){
+                  if(file_exists("../img_obras/".$random.'_'.$_FILES["file"]["name"])){
                       echo $_FILES["file"]["name"] . "Ya extiste.";
-                  }else{
+                  }else{ echo "hola 6";
+
                       move_uploaded_file($_FILES["file"]["tmp_name"],
-                      "../fotosobras/" .$random.'_'.$_FILES["file"]["name"]);
-                      echo "Archivo guardado "."../fotosobras/" .$random.'_'.$_FILES["file"]["name"];
+                      "../img_obras/" .$random.'_'.$_FILES["file"]["name"]);
+                      echo "Archivo guardado "."../img_obras/" .$random.'_'.$_FILES["file"]["name"];
+
+                      
+                      $Sql='';
+                       echo "hola 7";
                       $nombre=$_POST['nombre'];
                       $fecha_inicio=$_POST['fecha_inicio'];
                       $fecha_final=$_POST['fecha_final'];
                       $lugar=$_POST['lugar'];
                       $area=$_POST['area'];
                       $descripcion=$_POST['descripcion'];
+                      echo $Sql;
                      $Sql="insert into obras (nombre, fecha_inicio, fecha_final, lugar, area, descripcion, imagen) values(
                          '".$nombre."',
                          '".$fecha_inicio."',
@@ -44,10 +57,12 @@ if(!isset($_POST['nombre']) && !isset($_POST['fecha_inicio']) && !isset($_POST['
                          '".$lugar."',
                          '".$area."',
                          '".$descripcion."',
-                         '".$imagen."')";
+                         '".$imagen."'";
 
-                         $mysql->query($sql);
-                         header("Location: agregarobra.php");
+                         $mysql->query($Sql);
+                         echo '<script type="text/javascript">
+                               alert("se registro con exito");
+                                     </script>';
                       
                   }
               }
