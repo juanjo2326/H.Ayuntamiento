@@ -96,7 +96,7 @@ primary key(id_personal));
 -- tabla de obras--------------------------------
 -- ----------------------------------------------------
 
-
+drop table obras;
 create table obras(
 id_obra int (11)not null auto_increment,
 nombre varchar (40)not null,
