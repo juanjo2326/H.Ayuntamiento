@@ -1,7 +1,7 @@
 <?php
     include "./conexion.php";
-            
-                $mysql->query("insert into usuario (nombre,apellidoPa,apellidoMa,usuario,password,telefono,correo,tipo) values(
+                $mysql->query("insert into usuario (nombre,apellidoPa,apellidoMa,
+                               usuario,password,telefono,correo,tipo) values(
                     '".$_REQUEST['nombre']."',
                     '".$_REQUEST['apellidoPa']."',
                     '".$_REQUEST['apellidoMa']."',

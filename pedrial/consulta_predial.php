@@ -53,7 +53,7 @@ while ($f=$re->fetch_array()){
 
 <center>
     <table border: 2px; width="50%" style="border-radius: 5px;
-     width: 40%;
+    width: 40%;
    text-align: left;
    vertical-align: top;
    border: 3px solid #000;">

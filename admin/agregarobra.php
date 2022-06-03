@@ -55,62 +55,61 @@ include "../conexion.php";
     </header> 
 	<br><br>
     <center><h1>Agregar Obra</h1></center>
-	<div id="formularios">
+	<div id="form_register">
 
-		<form id="form_register" method="post" action="altaobra.php">
+    <form action="./altaobra.php" method = "post" enctype="multipart/form-data">
+          <!--<fieldset>-->
+              <div class ="field-container">
+              Nombre <br>
+              <input class="controls" type="text" placeholder="Nombre de la empresa" name="nombre" required> 
+              <!--<p class="mensajeError"> error error</p>-->
+              </div>
+          <!-- </fieldset>-->
+          <!--<fieldset>-->
+          <div class ="field-container">
+              Fecha de incio de la obra <br>
+              <input class="controls" type="date" placeholder="Horario de entrada" name="fecha_inicio" required>
+              <!--<p class="mensajeError"> error error</p> -->
+              </div>
+          <!-- </fieldset>-->
+         <!--<fieldset>-->
+         <div class ="field-container">
+              Fecha de terminacion de la obra <br>
+              <input class="controls" type="date" placeholder="Horario de salida" name="fecha_final" required> 
+              <!--<p class="mensajeError"> error error</p>-->
+              </div>
+          <!-- </fieldset>-->
+         <!--<fieldset>-->
+         <div class ="field-container">
+              Lugar <br>
+              <input class="controls" type="text" placeholder="lugar" name="lugar" required> 
+             <!-- <p class="mensajeError"> error error</p>-->
+              </div>
+        <!--<fieldset>-->
+         <div class ="field-container">
+              Area del ayuntamiento <br>
+              <input class="controls" type="text" placeholder="area" name="area" required> 
+             <!-- <p class="mensajeError"> error error</p>-->
+              </div>
+          <!-- </fieldset>-->
+                   <!--<fieldset>-->
+         <div class ="field-container">
+              Descripción <br>
+              <input class="controls" type="text" placeholder="descripcion" name="descripcion" required> 
+             <!-- <p class="mensajeError"> error error</p>-->
+              </div>
+          <!-- </fieldset>-->
+          <!--<fieldset>-->
+          <div class ="field-container">
+              Imagen <br>
+              <input class="subir" type="FILE" placeholder="Imagen" name="file" required> 
+              <!--<p class="mensajeError"> error error</p>-->
+              </div>
+          <!-- </fieldset>-->
+          <input class="center-content" type="submit" name="accion" value="enviar" class="Reagistrar">
+          <!--<p class="mensajeCorrecto"> Listo</p>-->
 
-			<div class="field-container">
-				<p>Nombre</p>
-				<i class="fa fa-folder fa-lg" aria-hidden="true"></i>
-				<input type="text" id="nombre" name="nombre" class="field" placeholder="Obra de reparacion..." required> <br/>
-			</div><br>
-
-			<div class="columns">
-				<div class="field-container">
-					<p>Fecha De Inicio</p>
-					<i class="fa fa-solid fa-calendar fa-lg"></i>
-					<input type="date" id="fecha_inicio" name="fecha_inicio" class="field" placeholder="" required> <br/>
-				</div>
-
-				<div class="field-container">
-					<p>Fecha Final</p>
-					<i class="fa fa-solid fa-calendar-check-o fa-lg"></i>
-					<input type="date" id="fecha_final" name="fecha_final" class="field" placeholder=""> <br/>
-				</div>
-			</div><br>
-
-			<div class="columns">
-				<div class="field-container">
-					<p>Lugar</p>
-					<i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
-					<input type="text" id="lugar" name="lugar" class="field" placeholder="Penjamillo" required> <br/>
-				</div>
-
-				<div class="field-container">
-					<p>Area</p>
-					<i class="fa fa-group fa-lg" aria-hidden="true"></i>
-					<input type="text" id="area" name="area" class="field" placeholder="Obras Publicas" required> <br/>
-				</div>
-			</div><br>
-
-			<div class="columns">
-				<div class="field-container">
-					<p>Descripcion</p>
-					<i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
-					<input type="text" id="descripcion" name="descripcion" class="field"  placeholder="Se reparo tramo..."> <br/>
-				</div>
-
-				<div class="field-container">
-					<p>Imagen</p>
-					<i class="fa fa-image fa-lg" aria-hidden="true"></i>
-					<input class="subir" type="FILE" placeholder="Imagen" name="file"  required> <br/>
-				</div>
-			</div><br><br>
-
-			<p class="center-content">
-				<input type="submit" class="btn btn-green" value="Registrar Datos">
-			</p>
-		</form>
+    </form>
 	</div>
 
 </body>
