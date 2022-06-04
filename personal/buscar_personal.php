@@ -44,10 +44,16 @@ $area=$_POST['area'];
 
 include "../conexion.php";
 
+<<<<<<< Updated upstream
 $re=$mysql->query("select * from personal where area='".$area."'")  or die(mysql_error());
 while ($f=$re->fetch_array()){
     ?>
    
+=======
+$re=$mysql->query("select * from personal where area=".$area)  or die(mysql_error());
+while ($f=$re->fetch_array()){
+    ?>
+>>>>>>> Stashed changes
 <center>
     <table border="2px" width="50%" style="border-radius: 5px;
     width: 36%;
@@ -56,6 +62,7 @@ while ($f=$re->fetch_array()){
     border: 1px solid #000;">
 
          <thead>
+<<<<<<< Updated upstream
          
         <tr>
                 <th scope="col">Nombre: </th><th><?php echo $f['nombre'];?></th></tr>
@@ -64,6 +71,16 @@ while ($f=$re->fetch_array()){
                <tr> <th scope="col">Area: </th><th><?php echo $f['area'];?></th></tr>
                <tr> <th scope="col">Telefono del Area: </th><th><?php echo $f['telefono_area'];?></th></tr>
         </thead><br>
+=======
+        <tr>
+                <th scope="col">Nombre: </th><th><?php echo $f['nombre'];?></th></tr>
+                <tr><th scope="col"></th><th><?php echo $f['apellidoP'];?></th></tr>
+                <tr><th scope="col"></th><th><?php echo $f['apellidoM'];?></th></tr>
+               <tr> <th scope="col">Area: </th><th><?php echo $f['area'];?></th></tr>
+               <tr> <th scope="col">Telefono del area: </th><th><?php echo $f['telefono_area'];?></th></tr>
+            
+        </thead>
+>>>>>>> Stashed changes
         </center>
         <?php
 

@@ -135,9 +135,14 @@
                                      background: rgb(186,25,201);
                                      border: none;
                                      border-radius: 8px;
+<<<<<<< Updated upstream
                                      cursor: pointer;" href="./detalles_trabajo.php?id=<?php echo $f['id']; ?>&token=<?php echo
                            hash_hmac('sha1', $f['id'], KEY_TOKEN); ?>" class="btn 
                            btn-primary"> ver detalles</a>
+=======
+                                     cursor: pointer;" 
+                                     href="./detalles_trabajo.php?id=<?php echo $f['id']; ?>"> Ver detalles</a>
+>>>>>>> Stashed changes
                </center>
                </div>
                <?php

@@ -89,6 +89,7 @@
     <form action="buscar_personal.php" method = "post" enctype="multipart/form-data">
           <!--<fieldset>-->
               Seleccinar nombre del area <br><br>
+<<<<<<< Updated upstream
               <select class="controls" type="text" name="area" 
               required style="padding: 14px;
                               width: 300px;
@@ -106,6 +107,25 @@
                     <option value="Direccion De Desarrollo Agropecuario">Dirección De Desarrollo Agropecuario</option>
                     <option value="Contraloria">Contraloría</option>
                     <option value="Sistema de Desarrollo Integral Familiar(DIF)">Sistema de Desarrolo Integral Familiar(DIF)</option>
+=======
+              <select class="controls" type="text" placeholder="Obras Publicas" name="area" 
+              required style="padding: 14px;
+                              width: 300px;
+                              border-radius: 9px;">
+                    <option>Presidencia</option>
+                    <option>Planeación</option>
+                    <option>Casa de la cultura</option>
+                    <option>Secretaria</option>
+                    <option>Sindicatura</option>
+                    <option>Tesorería</option>
+                    <option>Predial</option>
+                    <option>Urbanismo y Obras Públicas</option>
+                    <option>Oficialía Mayor</option>
+                    <option>Dirección De Desarrollo Social</option>
+                    <option>Dirección De Desarrollo Agropecuario</option>
+                    <option>Contraloría</option>
+                    <option>Sistema de Desarrolo Integral Familiar(DIF)</option>
+>>>>>>> Stashed changes
                 </select> <br><br>
               <input class="botons" type="submit" name="accion" value="Buscar" 
               style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);

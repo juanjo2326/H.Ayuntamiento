@@ -16,6 +16,8 @@ select * from escuelas;
 select * from trabajadores;
 
 
+insert into obras (nombre, fecha_inicio, fecha_final, lugar, area, descripcion, imagen) values( '123456789', '0001-01-01', '0001-01-01', '1', '1', '124902_expo.png');
+
 -- ranchos
 select * from rancho;
 INSERT INTO `ayuntamiento`.`rancho` (`idranch`, `nombre`, `habitantes`) VALUES ('1', 'Ansihuacuaro', '1095');
