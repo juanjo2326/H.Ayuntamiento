@@ -48,7 +48,7 @@
                     <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="../obras/inicio_obras.php"style="text-decoration:none">Obras realizadas</a></li>
                     <li><a href="../pedrial/inicio_pedrial.php"style="text-decoration:none">Documento predial</a></li>
-                    <li><a href="../construccion/construccion.php"style="text-decoration:none">Personal</a></li>
+                    <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="../estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
                         <ul class="submenu">
@@ -111,21 +111,20 @@
     <section>
        <?php
                require 'config.php'; 
-               include '../conexion.php';
-               
+               include '../conexion.php';  
                $re=$mysql->query("select * from empresas where estado = 1 ORDER BY vacante DESC") or die(mysql_error());
                while ($f=$re->fetch_array()){
                    ?>
                    <div class="empresas">
                        <center>
                            <div class="contenedor-img">
-                               <img  style="border-radius: 20px;" class="empresas-imagen" src="../img_presas/<?php echo $f['imagen'];?>"><br>
+                               <img  style="border-radius: 20px;" class="empresas-imagen" 
+                               src="../img_presas/<?php echo $f['imagen'];?>"><br>
                                <?php echo ($f['vacante']>0) ? '' : '<p class="text-img">Agotado</p>';?>
                            </div>
                            <span><?php echo $f['nombre'];?></span><br>
                            <span>Fecha de publicacion: <?php echo $f['fecha_publi'];?></span><br>
                            <?php echo ($f['vacante']>0) ? 'vacante: '.$f['vacante'] : 'sin vacantes'; ?><br>
-<<<<<<< Updated upstream
                            <a style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
                                      color: white;
                                      padding: 15px 32px;
@@ -137,23 +136,8 @@
                                      border: none;
                                      border-radius: 8px;
                                      cursor: pointer;" href="./detalles_trabajo.php?id=<?php echo $f['id']; ?>&token=<?php echo
-=======
-                           <a     style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 
-                           0 17px 50px 0 rgb(0 0 0 / 19%);
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    background: rgb(186,25,201);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;" href="./detalles_trabajo.php?id=<?php echo $f['id']; ?>&token=<?php echo
->>>>>>> Stashed changes
                            hash_hmac('sha1', $f['id'], KEY_TOKEN); ?>" class="btn 
                            btn-primary"> ver detalles</a>
-
                </center>
                </div>
                <?php

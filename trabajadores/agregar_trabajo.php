@@ -40,7 +40,7 @@ include "../conexion.php";
                     <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="../obras/inicio_obras.php"style="text-decoration:none">Obras realizadas</a></li>
                     <li><a href="../pedrial/inicio_pedrial.php"style="text-decoration:none">DOCUMENTO PEDRIAL</a></li>
-                    <li><a href="../construccion/construccion.php"style="text-decoration:none">Personal</a></li>
+                    <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="../estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
                         <ul class="submenu">

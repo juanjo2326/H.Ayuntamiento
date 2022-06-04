@@ -36,7 +36,7 @@
                     <li><a href="../rfc.php"style="text-decoration:none">Consultar RFC</a></li>
                     <li><a href="#"style="text-decoration:none">Obras realizadas</a></li>
                     <li><a href="../pedrial/inicio_pedrial.php"style="text-decoration:none">Documento predial</a></li>
-                    <li><a href="../construccion/construccion.php"style="text-decoration:none">Personal</a></li>
+                    <li><a href="../personal/personal.php"style="text-decoration:none">Personal</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
                         <ul class="submenu">
                             <li><a href="../construccion/construccion.php" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
@@ -103,7 +103,8 @@
                            </div>
                            <span><h3>Nombre de la institucion:</h3><?php echo $f['nombre'];?></span><br>
                            <span><h3>Direccion:</h3> <?php echo $f['direccion'];?></span><br>
-                           <a style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+                           <a style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 
+                                     0 17px 50px 0 rgb(0 0 0 / 19%);
                                      color: white;
                                      padding: 15px 32px;
                                      text-align: center;

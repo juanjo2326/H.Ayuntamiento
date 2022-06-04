@@ -9,13 +9,4 @@ die("Problemas con la conexion de base de datos");
 
 
 
-
-
-
-
-
-
-
-
-
 ?>

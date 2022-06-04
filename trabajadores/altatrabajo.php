@@ -1,11 +1,14 @@
 <?php
 include "../conexion.php";
 
-if(empty($_POST['nombre']) && empty($_POST['horario_entrada']) && empty($_POST['horario_salida']) && empty($_POST['requisitos']) 
-  && empty($_POST['fecha_publi']) && empty($_POST['telefono']) && empty($_POST['vacante']) && empty($_POST['direccion']))
+if(empty($_POST['nombre']) && empty($_POST['horario_entrada']) 
+   && empty($_POST['horario_salida']) && empty($_POST['requisitos']) 
+  && empty($_POST['fecha_publi']) && empty($_POST['telefono']) 
+  && empty($_POST['vacante']) && empty($_POST['direccion']))
   {
       header("Location: agregar_trabajo.php");
   } else{
+      
       $allowedExts = array("jpeg","jpg","png","xbm","xpm","wbmp","tiff","psb","bmp");
       $temp = explode(" . ", $_FILES["file"]["name"]);
       $extension = end($temp);
@@ -34,9 +37,9 @@ if(empty($_POST['nombre']) && empty($_POST['horario_entrada']) && empty($_POST['
                       echo $_FILES["file"]["name"] . "Ya extiste.";
                   }else{
 
-                      move_uploaded_file($_FILES["file"]["tmp_name"],
-                      "../img_presas/" .$random.'_'.$_FILES["file"]["name"]);
-                      echo "Archivo guardado "."../img_presas/" .$random.'_'.$_FILES["file"]["name"];
+                    move_uploaded_file($_FILES["file"]["tmp_name"],
+                    "../img_presas/" .$random.'_'.$_FILES["file"]["name"]);
+                    echo "Archivo guardado "."../img_presas/" .$random.'_'.$_FILES["file"]["name"];
 
                       
                       $Sql='';
@@ -49,7 +52,8 @@ if(empty($_POST['nombre']) && empty($_POST['horario_entrada']) && empty($_POST['
                       $vacante=$_POST['vacante'];
                       $direccion=$_POST['direccion'];
                       echo $Sql;
-                     $Sql="insert into empresas (nombre, horario_entrada, horario_salida,requisitos, fecha_publi, telefono, vacante, direccion, imagen, estado) values(
+                     $Sql="insert into empresas (nombre, horario_entrada, horario_salida,
+                            requisitos, fecha_publi, telefono, vacante, direccion, imagen, estado) values(
                          '".$nombre."',
                          '".$horario_entrada."',
                          '".$horario_salida."',
@@ -64,13 +68,12 @@ if(empty($_POST['nombre']) && empty($_POST['horario_entrada']) && empty($_POST['
                          $mysql->query($Sql);
                          echo '<script type="text/javascript">
                                alert("se registro con exito");
-                                     </script>';
-                      
+                                     </script>'; 
                   }
               }
           }else{
               echo "Formato no soportado";
           }
+  
   }
-
 ?>

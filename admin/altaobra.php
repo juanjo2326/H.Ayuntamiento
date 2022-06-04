@@ -1,18 +1,18 @@
 <?php
 include "../conexion.php";
 
-echo " hola 1";
-if(empty($_POST['nombre']) && empty($_POST['fecha_inicio']) && empty($_POST['fecha_final']) && empty($_POST['lugar']) 
+if(empty($_POST['nombre']) && empty($_POST['fecha_inicio']) 
+    && empty($_POST['fecha_final']) && empty($_POST['lugar']) 
   && empty($_POST['area']) && empty($_POST['descripcion']))
   {
       header("Location: agregarobra.php");
-  } else{ echo "hola 2";
+  } else{ 
+
       $allowedExts = array("jpeg","jpg","png","xbm","xpm","wbmp","tiff","psb","bmp");
       $temp = explode(" . ", $_FILES["file"]["name"]);
       $extension = end($temp);
       $imagen="";
       $random=rand(1,999999);
-      echo "hola 3";
       if (  
           ($_FILES["file"]["type"] == "image/jpeg")
           || ($_FILES["file"]["type"] == "image/jpg")
@@ -23,18 +23,19 @@ if(empty($_POST['nombre']) && empty($_POST['fecha_inicio']) && empty($_POST['fec
           || ($_FILES["file"]["type"] == "image/tiff")
           || ($_FILES["file"]["type"] == "image/psb")
           || ($_FILES["file"]["type"] == "image/bmp")
-          ){  echo "hola 4";
+          ){  
+            
               //verificamos que sea una imagen
               if($_FILES["file"]["error"] > 0){
                   //verificamos que venga algo en el input file
                   echo "Error numerpo:" . $_FILES["file"]["error"] . "<br>";
-              }else{ echo "hola 5";
+              }else{ 
                   //se sube la imagen
 
                   $imagen= $random.'_'.$_FILES["file"]["name"];
                   if(file_exists("../img_obras/".$random.'_'.$_FILES["file"]["name"])){
                       echo $_FILES["file"]["name"] . "Ya extiste.";
-                  }else{ echo "hola 6";
+                  }else{ 
 
                       move_uploaded_file($_FILES["file"]["tmp_name"],
                       "../img_obras/" .$random.'_'.$_FILES["file"]["name"]);
@@ -43,13 +44,15 @@ if(empty($_POST['nombre']) && empty($_POST['fecha_inicio']) && empty($_POST['fec
                       
                       $Sql='';
                        echo "hola 7";
+
+                       $lugar='';
+
                       $nombre=$_POST['nombre'];
                       $fecha_inicio=$_POST['fecha_inicio'];
                       $fecha_final=$_POST['fecha_final'];
                       $lugar=$_POST['lugar'];
                       $area=$_POST['area'];
                       $descripcion=$_POST['descripcion'];
-                      echo $Sql;
                      $Sql="insert into obras (nombre, fecha_inicio, fecha_final, lugar, area, descripcion, imagen) values(
                          '".$nombre."',
                          '".$fecha_inicio."',
@@ -57,10 +60,12 @@ if(empty($_POST['nombre']) && empty($_POST['fecha_inicio']) && empty($_POST['fec
                          '".$lugar."',
                          '".$area."',
                          '".$descripcion."',
-                         '".$imagen."'";
+                         '".$imagen."')";
+                         echo $Sql;
 
                          $mysql->query($Sql);
                          echo '<script type="text/javascript">
+                         window.location.href="../administracion/inicio_admin.php";
                                alert("se registro con exito");
                                      </script>';
                       
@@ -69,6 +74,7 @@ if(empty($_POST['nombre']) && empty($_POST['fecha_inicio']) && empty($_POST['fec
           }else{
               echo "Formato no soportado";
           }
+
   }
 
 ?>

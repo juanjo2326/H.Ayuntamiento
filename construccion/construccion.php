@@ -70,10 +70,11 @@ include "./conexion.php";
         
             <img src="../imagenes/construccion.png" width="200"id="letras" ><br>
             <p><h1 style="border-radius: 20px;
-    margin: 10px 15px;
-    display: inline-flex;
-    background: silver;
-    padding: 10px;">EN CONSTRUCCION SI NECESITASAYUDA FAVOR DE PASAR AL <br>
+                          margin: 10px 15px;
+                          display: inline-flex;
+                          background: silver;
+                          padding: 10px;">
+            EN CONSTRUCCION SI NECESITASAYUDA FAVOR DE PASAR AL <br>
             H. AYUNTAMIENTO PENJAMILLO </h1></p>
             <img src="../imagenes/mantenimiento.png" width="200" id="letras">
             </div>

@@ -34,12 +34,12 @@
                     <li><a href="../estudiantes/inicio_estudiantes.php"style="text-decoration:none">estudiantes</a></li>
                     <li><a href="#"style="text-decoration:none">Ayuda</a>
                         <ul class="submenu">
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda a problemas personales</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Ayuda adictos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">contactanos</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Emergencias</a></li>
-                            <li><a href="" href○="#"style="text-decoration:none">Quejas o sugerencias</a></li>
+                            <li><a href="../construccion/construccion.php" href○="#"style="text-decoration:none">Ayuda comunitaria</a></li>
+                            <li><a href="../construccion/construccion.php" href○="#"style="text-decoration:none">Ayuda a problemas personales</a></li>
+                            <li><a href="../construccion/construccion.php" href○="#"style="text-decoration:none">Ayuda adictos</a></li>
+                            <li><a href="../construccion/construccion.php" href○="#"style="text-decoration:none">contactanos</a></li>
+                            <li><a href="../construccion/construccion.php" href○="#"style="text-decoration:none">Emergencias</a></li>
+                            <li><a href="../construccion/construccion.php" href○="#"style="text-decoration:none">Quejas o sugerencias</a></li>
                         </ul> 
                     </li>
                         <?php
@@ -89,23 +89,23 @@
     <form action="buscar_personal.php" method = "post" enctype="multipart/form-data">
           <!--<fieldset>-->
               Seleccinar nombre del area <br><br>
-              <select class="controls" type="text" placeholder="Obras Publicas" name="area" 
+              <select class="controls" type="text" name="area" 
               required style="padding: 14px;
                               width: 300px;
                               border-radius: 9px;">
-                    <option>Presidencia</option>
-                    <option>Planeación</option>
-                    <option>Casa de la cultura</option>
-                    <option>Secretaria</option>
-                    <option>Sindicatura</option>
-                    <option>Tesorería</option>
-                    <option>Predial</option>
-                    <option>Urbanismo y Obras Públicas</option>
-                    <option>Oficialía Mayor</option>
-                    <option>Dirección De Desarrollo Social</option>
-                    <option>Dirección De Desarrollo Agropecuario</option>
-                    <option>Contraloría</option>
-                    <option>Sistema de Desarrolo Integral Familiar(DIF)</option>
+                    <option value="Presidencia">Presidencia</option>
+                    <option value="Planeacion">Planeación</option>
+                    <option value="Casa de la cultura">Casa de la cultura</option>
+                    <option value="Secretaria">Secretaria</option>
+                    <option value="Sindicatura">Sindicatura</option>
+                    <option value="Tesoreria">Tesorería</option>
+                    <option value="Predial">Predial</option>
+                    <option value="Urbanismo y Obras Publicas">Urbanismo y Obras Públicas</option>
+                    <option value="Oficialia Mayor">Oficialía Mayor</option>
+                    <option value="Direccion De Desarrollo Social">Dirección De Desarrollo Social</option>
+                    <option value="Direccion De Desarrollo Agropecuario">Dirección De Desarrollo Agropecuario</option>
+                    <option value="Contraloria">Contraloría</option>
+                    <option value="Sistema de Desarrollo Integral Familiar(DIF)">Sistema de Desarrolo Integral Familiar(DIF)</option>
                 </select> <br><br>
               <input class="botons" type="submit" name="accion" value="Buscar" 
               style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);

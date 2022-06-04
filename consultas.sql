@@ -1,9 +1,11 @@
 
 select * from obras;
+
 select * from pago_pedrial;
 
-
+select * from rancho;
 select * from empresas;
+select * from personal;
 
 select * from trabajadores;
 
