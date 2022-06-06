@@ -67,6 +67,7 @@ if(empty($_POST['nombre']) && empty($_POST['horario_entrada'])
 
                          $mysql->query($Sql);
                          echo '<script type="text/javascript">
+                         window.location.href="./inicio_trabajo.php";
                                alert("se registro con exito");
                                      </script>'; 
                   }

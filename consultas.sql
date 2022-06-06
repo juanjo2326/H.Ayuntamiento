@@ -249,3 +249,10 @@ direccion varchar (100) not null,
 imagen varchar (40) not null,
 tipo smallint(2)not null,
 primary key (id_trabajador));
+
+
+
+-- insert de obras 
+INSERT INTO `ayuntamiento`.`obras` (`id_obra`, `nombre`, `fecha_inicio`, `fecha_final`, `lugar`, `area`, `descripcion`, `imagen`) VALUES ('1', 'obra reencarpetamiento con concreto asfalto', '2022-04-20', '2022-05-06', 'carretera zerecuato-La Cuestita', 'obras publicas', 'H. Ayuntamiento de Penjamillo da inicio a la obra de reencarpetamiento con concreto asfaltico de la carretera Zerecuato- La Cuestita. #penjamilloesdetodos', 'reencarpetamiento1.jpeg');
+INSERT INTO `ayuntamiento`.`obras` (`id_obra`, `nombre`, `fecha_inicio`, `fecha_final`, `lugar`, `area`, `descripcion`, `imagen`) VALUES ('2', 'Obra de la pavimentacion con concreto hidraulico', '2022-04-25', '2022-05-23', 'San Antonio Carupo', 'Obras Publicas	', 'En la comunidad de San Antonio Carupo, se entrego la obra de la pavimentacion con concreto hidraulico en la calle Venustiano Carranza.', 'pavimentacion1.jpg');
+INSERT INTO `ayuntamiento`.`obras` (`id_obra`, `nombre`, `fecha_inicio`, `fecha_final`, `lugar`, `area`, `descripcion`, `imagen`) VALUES ('3', 'Entrega de Pollitas', '2022-05-18	', '2022-05-18', 'Presidencia de Penjamillo', 'Desarrollo Social', 'Desarrollo Social de Penjamillo entrego 250 paquetes de pollitas, beneficiando asi a 190 familias penjamillenses', 'pollitas1.jpg');

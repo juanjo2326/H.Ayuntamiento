@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUSCAR TRABAJO</title>
+    <title> Escuelas</title>
     <link rel="stylesheet" type="text/css"href="../css/escuela.css">
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     <!--no decetca los estilos en los trabajos-->
@@ -99,7 +99,9 @@
     
                        <center>
                            <div class="contenedor-img">
-                               <img style="border-radius: 40px; width: 340px"class="escuelas-imagen" src="../img_escu/<?php echo $f['imagen1'];?>"> <br>
+                               <img style="border-radius: 40px; width: 340px"
+                               class="escuelas-imagen" 
+                               src="../img_escu/<?php echo $f['imagen1'];?>"> <br>
                            </div>
                            <span><h3>Nombre de la institucion:</h3><?php echo $f['nombre'];?></span><br>
                            <span><h3>Direccion:</h3> <?php echo $f['direccion'];?></span><br>

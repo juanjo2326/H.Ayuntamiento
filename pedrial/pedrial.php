@@ -120,7 +120,7 @@ include "../conexion.php";
           <!-- </fieldset>-->
           <!--<fieldset>-->
                 Importe <br>
-              <input class="controls" type="text" placeholder="Importe a pagar" name="importe" required> 
+              <input class="controls" type="text" placeholder="Importe" name="importe" required> 
           <!-- </fieldset>-->
                Telefono <br>
               <input class="controls" type="text" placeholder="Telefono personal" name="telefono" required> 

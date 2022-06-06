@@ -72,7 +72,8 @@
                 <div class="field-container">
                     <p>Nombre</p>
                     <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
-                    <input type="text" id="nombre" name="nombre" class="field" placeholder="Jesus ..."> <br/>
+                    <input type="text" id="nombre" name="nombre" 
+                    class="field" placeholder="Jesus ..."> <br/>
                 </div>
 
             <div class="columns">

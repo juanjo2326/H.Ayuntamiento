@@ -8,6 +8,18 @@
     <link rel="stylesheet" type="text/css"href="../css/estilos.css">
     <!--no decetca los estilos en los trabajos-->
 </head>
+<style type="text/css">
+    .obras{            
+           width: 400px;
+    margin: 10px 5px;
+    display: inline-flex;
+    height: 280px;
+    justify-content: center;
+    background: silver;
+    border-radius: 20px;
+    padding: 10px;
+}
+</style>
 <body>
 <header>
         <div class="header_superior">
@@ -83,6 +95,7 @@
                                           background: silver;
                                           border-radius: 75px;
                                           padding: 34px;;">
+                    <div class="obras">
                        <center>
                            <div class="contenedor-img">
                                <img  style="border-radius: 40px; width: 340px" class="obras-imagen" src="../img_obras/<?php echo $f['imagen'];?>"><br>
@@ -94,7 +107,6 @@
                            <span>Lugar: <?php echo $f['lugar'];?></span><br>
                            <span>Area: <?php echo $f['area'];?></span><br>
                            <a style="box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 
-<<<<<<< Updated upstream
                                      0 17px 50px 0 rgb(0 0 0 / 19%);
                                      color: white;
                                      padding: 15px 32px;
@@ -107,22 +119,8 @@
                                      border-radius: 8px;
                                      cursor: pointer;" 
                            href="./detalles_obra.php?id_obra=<?php echo $f['id_obra']; ?>"> ver detalles</a>
-                            
-=======
-                           0 17px 50px 0 rgb(0 0 0 / 19%);
-                           color: white;
-                           padding: 15px 32px;
-                           text-align: center;
-                           text-decoration: none;
-                           display: inline-block;
-                           font-size: 16px;
-                           background: rgb(186,25,201);
-                           border: none;
-                           border-radius: 8px;
-                           cursor: pointer;" 
-                           href="./detalles_obra.php?id_obra=<?php echo $f['id_obra']; ?>"> ver detalles</a>
->>>>>>> Stashed changes
                </center>
+               </div>
                </div><br><br>
                <?php
                } 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Personal</title>
     <link rel="stylesheet" type="text/css"href="../css/estilologin.css">
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
@@ -37,50 +37,43 @@
     <br><br><br><br>
 
 
-
+    <center><p><h2>El telefono se coloco en la parte de arriba es el mismo <br>
+                    para todas las demas tablas.</h2></p></center>
 <?php
 $area='';
 $area=$_POST['area'];
 
 include "../conexion.php";
-
-<<<<<<< Updated upstream
 $re=$mysql->query("select * from personal where area='".$area."'")  or die(mysql_error());
 while ($f=$re->fetch_array()){
-    ?>
-   
-=======
-$re=$mysql->query("select * from personal where area=".$area)  or die(mysql_error());
-while ($f=$re->fetch_array()){
-    ?>
->>>>>>> Stashed changes
+    ?> 
+
 <center>
+ <table>
+     <thead>
+         <tr>
+         <th scope="col">Telefono de la Area: </th><th><?php echo $f['telefono_area'];?></th>
+         </tr>
+     </thead>
+ </table>
     <table border="2px" width="50%" style="border-radius: 5px;
     width: 36%;
     text-align: left;
     vertical-align: top;
     border: 1px solid #000;">
+    
 
          <thead>
-<<<<<<< Updated upstream
          
         <tr>
                 <th scope="col">Nombre: </th><th><?php echo $f['nombre'];?></th></tr>
                 <tr><th scope="col">Apellido Paterno: </th><th><?php echo $f['apellidoP'];?></th></tr>
-                <tr><th scope="col">Apellido Materno: </th><th><?php echo $f['apellidoM'];?></th></tr>
+                <tr><th scope="col">Apellido Materno: </th><th><?php echo $f['apeliidoM'];?></th></tr>
+                
                <tr> <th scope="col">Area: </th><th><?php echo $f['area'];?></th></tr>
-               <tr> <th scope="col">Telefono del Area: </th><th><?php echo $f['telefono_area'];?></th></tr>
+               
         </thead><br>
-=======
-        <tr>
-                <th scope="col">Nombre: </th><th><?php echo $f['nombre'];?></th></tr>
-                <tr><th scope="col"></th><th><?php echo $f['apellidoP'];?></th></tr>
-                <tr><th scope="col"></th><th><?php echo $f['apellidoM'];?></th></tr>
-               <tr> <th scope="col">Area: </th><th><?php echo $f['area'];?></th></tr>
-               <tr> <th scope="col">Telefono del area: </th><th><?php echo $f['telefono_area'];?></th></tr>
-            
-        </thead>
->>>>>>> Stashed changes
+
         </center>
         <?php
 
