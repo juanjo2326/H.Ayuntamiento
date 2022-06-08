@@ -72,7 +72,7 @@ include "../conexion.php";
               Nombre <br>
               <input style="padding: 14px;
                             width: 300px;
-                            border-radius: 9px;" class="controls" type="text" placeholder="Nombre de la empresa" name="nombre" required> 
+                            border-radius: 9px;" class="controls" type="text" placeholder="Nombre de la obra" name="nombre" required> 
               <!--<p class="mensajeError"> error error</p>-->
               </div>
           <!-- </fieldset>-->

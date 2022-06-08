@@ -148,7 +148,12 @@ carrera4 varchar (20),
 primary key(id));
 
 
-
+INSERT INTO `ayuntamiento`.`escuelas` (`id`, `nombre`, `direccion`, `telefono`, `direcctor`, `clave`, `horarios`, `tipo`, `comentarios`, `imagen1`) VALUES ('2', 'Jose Maria Morelos y Pavon', 'ave Jardin #68 Penjamillo Michoacan', '3595240409', 'Alejandra Sanchez Gutierres ', '10npk11380', '8 am a 6 pm', 'Escuela primaria ', 'Escuela primaria URB.F FED. para niños ', 'jose.jpg');
+INSERT INTO `ayuntamiento`.`escuelas` (`id`, `nombre`, `direccion`, `telefono`, `direcctor`, `clave`, `horarios`, `tipo`, `comentarios`, `imagen1`) VALUES ('3', 'Jardin Morelos', 'ave 5 de mayo #340 Penjamillo Michoacan', '3595240100', 'Margarita Negrete Lopez', '14309jm0965', '9 am a 11 am', 'Jardin de Niños', 'Es un jardin de niños ', 'jardin.jpg');
+INSERT INTO `ayuntamiento`.`escuelas` (`id`, `nombre`, `direccion`, `telefono`, `direcctor`, `clave`, `horarios`, `tipo`, `comentarios`, `imagen1`) VALUES ('4', 'Justo Sierra', 'av Morelos PTe. #160 Penjamillo Michoacan', '3595240981', 'Jose Roberto Aguiñiga Valadez', '16DPR2768L', '8 am a 6 pm', 'Escuela primaria', 'Escuela primaria URB. FED. para niños', 'justo.jpg');
+INSERT INTO `ayuntamiento`.`escuelas` (`id`, `nombre`, `direccion`, `telefono`, `direcctor`, `clave`, `horarios`, `tipo`, `comentarios`, `imagen1`) VALUES ('5', 'CAM penjamillo', 'av Los Encinos #38 Penjamillo Michoacan ', '3595241268', 'Guadalupe Orozco Avila', '16250capm08', '9 am a 12 pm', 'Escuela para niños Especiales', 'Es una escuela para niños con problemas', 'cam.jpg');
+INSERT INTO `ayuntamiento`.`escuelas` (`id`, `nombre`, `direccion`, `telefono`, `direcctor`, `clave`, `horarios`, `tipo`, `comentarios`, `imagen1`) VALUES ('6', 'CECyTE', 'av Petazicuaro #244 Penjamillo Michoacan', '3595244032', 'Jose Espinoza Arevalo', '16ETCOOO1G', '7 am a 5 pm', 'Preparatoria', 'Preparatoria para adolecentes con mentalidad de sobre salir', 'cecytem.jpg');
+INSERT INTO `ayuntamiento`.`escuelas` (`id`, `nombre`, `direccion`, `telefono`, `direcctor`, `clave`, `horarios`, `tipo`, `comentarios`, `imagen1`) VALUES ('7', 'Secundaria Tecnica', 'av Michoacan Zinaparo-Villa morelos #180', '3592460963', 'Jose Antonio Mendez Rios', '1053CNTE091', '7 am a 3 pm', 'Secundaria', 'Secundaria Tecnica con diferentes modulos', 'est63.jpg');
 
 
 

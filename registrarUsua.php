@@ -9,8 +9,8 @@
                     '".$_REQUEST['password']."',
                     '".$_REQUEST['telefono']."',
                     '".$_REQUEST['correo']."',
-                    1)");
+                    3)");
             
             
-            header("Location: ./index.php");
+            header("Location: ./login.php");
 ?>

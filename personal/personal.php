@@ -89,6 +89,7 @@
     <form action="buscar_personal.php" method = "post" enctype="multipart/form-data">
           <!--<fieldset>-->
               Seleccinar nombre del area <br><br>
+
               <select class="controls" type="text" name="area" 
               required style="padding: 14px;
                               width: 300px;

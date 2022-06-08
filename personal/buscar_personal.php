@@ -34,7 +34,7 @@
     </div>
 
         
-    <br><br><br><br>
+    <br>
 
 
     <center><p><h2>El telefono se coloco en la parte de arriba es el mismo <br>
@@ -44,6 +44,7 @@ $area='';
 $area=$_POST['area'];
 
 include "../conexion.php";
+
 $re=$mysql->query("select * from personal where area='".$area."'")  or die(mysql_error());
 while ($f=$re->fetch_array()){
     ?> 
@@ -52,7 +53,7 @@ while ($f=$re->fetch_array()){
  <table>
      <thead>
          <tr>
-         <th scope="col">Telefono de la Area: </th><th><?php echo $f['telefono_area'];?></th>
+         <th scope="col">Número del Area: </th><th><?php echo $f['telefono_area'];?></th>
          </tr>
      </thead>
  </table>
@@ -68,8 +69,7 @@ while ($f=$re->fetch_array()){
         <tr>
                 <th scope="col">Nombre: </th><th><?php echo $f['nombre'];?></th></tr>
                 <tr><th scope="col">Apellido Paterno: </th><th><?php echo $f['apellidoP'];?></th></tr>
-                <tr><th scope="col">Apellido Materno: </th><th><?php echo $f['apeliidoM'];?></th></tr>
-                
+                <tr><th scope="col">Apellido Materno: </th><th><?php echo $f['apellidoM'];?></th></tr>
                <tr> <th scope="col">Area: </th><th><?php echo $f['area'];?></th></tr>
                
         </thead><br>

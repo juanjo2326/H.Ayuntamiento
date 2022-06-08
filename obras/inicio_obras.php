@@ -121,7 +121,9 @@
                            href="./detalles_obra.php?id_obra=<?php echo $f['id_obra']; ?>"> ver detalles</a>
                </center>
                </div>
-               </div><br><br>
+
+               </div>
+
                <?php
                } 
                ?>
